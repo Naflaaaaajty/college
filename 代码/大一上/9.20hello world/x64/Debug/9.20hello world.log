@@ -1,0 +1,4 @@
+﻿  hello world.c
+C:\Users\nafla\Desktop\代码\大一上\9.20hello world\hello world.c(1,1): warning C4005: “_CRT_SECURE_NO_WARNINGS”: 宏重定义
+C:\Users\nafla\Desktop\代码\大一上\9.20hello world\hello world.c(1,1): message : 之前在命令行上声明的“_CRT_SECURE_NO_WARNINGS”
+  9.20hello world.vcxproj -> C:\Users\nafla\Desktop\代码\大一上\x64\Debug\9.20hello world.exe
