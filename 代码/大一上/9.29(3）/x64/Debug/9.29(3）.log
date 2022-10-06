@@ -1,6 +1,0 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(534,5): warning MSB8028: 中间目录(x64\Debug\)包含从另一个项目(9.29(3）.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
-  源.c
-C:\Users\nafla\Desktop\代码\大一上\9.29(3）\源.c(12,2): warning C4013: “system”未定义；假设外部返回 int
-C:\Users\nafla\Desktop\代码\大一上\9.29(3）\源.c(39,43): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
-C:\Users\nafla\Desktop\代码\大一上\9.29(3）\源.c(44,46): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
-  9.29(3）.vcxproj -> C:\Users\nafla\Desktop\代码\大一上\x64\Debug\最小公约数和最小公倍数.exe
