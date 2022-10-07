@@ -1,0 +1,3 @@
+﻿  switch调试.c
+C:\Users\nafla\Desktop\code\大一上\Project2\switch调试.c(34,2): warning C4013: “system”未定义；假设外部返回 int
+  Project2.vcxproj -> C:\Users\nafla\Desktop\code\大一上\x64\Debug\Project2.exe
