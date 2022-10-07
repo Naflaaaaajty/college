@@ -3,29 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10.6", "Project1\Project1.vcxproj", "{3A178FC6-524A-49B2-8170-C7A1B5FFC0BE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "结构体2", "Project1\Project1.vcxproj", "{3A178FC6-524A-49B2-8170-C7A1B5FFC0BE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10.6（2）", "10.6（2）\10.6（2）.vcxproj", "{D38AE0DE-ABA9-4AA7-8467-A3A3837D79E4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "分支与循环语句", "10.6（2）\10.6（2）.vcxproj", "{D38AE0DE-ABA9-4AA7-8467-A3A3837D79E4}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "图书馆存书系统", "图书馆存书系统\图书馆存书系统.vcxproj", "{ECD868CC-7005-4A63-87CF-C986B0A50CF5}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "判断n以内的奇数", "判断100以内的奇数\判断100以内的奇数.vcxproj", "{2B8E0075-C707-4418-8044-8955B3BF10CE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project2", "Project2\Project2.vcxproj", "{4000F7DA-6DA5-47FA-B387-8A393FF0833A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "switch调试", "Project2\Project2.vcxproj", "{4000F7DA-6DA5-47FA-B387-8A393FF0833A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project3", "Project3\Project3.vcxproj", "{86DE742D-7706-44AE-A327-811745BD4BF0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "switch调试2", "Project3\Project3.vcxproj", "{86DE742D-7706-44AE-A327-811745BD4BF0}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "密码调试", "Project11\Project11.vcxproj", "{9EE170FE-8855-4221-8EC4-6F38866016A6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project7", "Project7\Project7.vcxproj", "{92816E45-57E0-4DB5-AF09-D74549F03165}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "成绩表", "Project7\Project7.vcxproj", "{92816E45-57E0-4DB5-AF09-D74549F03165}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project1qw", "Project1qw\Project1qw.vcxproj", "{936A103D-2515-4788-A59A-3DBC6880D01B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "圣诞树", "Project1qw\Project1qw.vcxproj", "{936A103D-2515-4788-A59A-3DBC6880D01B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project1czcz", "Project1czcz\Project1czcz.vcxproj", "{9B88F3C7-22B1-47CB-B6BB-123D46DB6A9B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "for打印", "Project1czcz\Project1czcz.vcxproj", "{9B88F3C7-22B1-47CB-B6BB-123D46DB6A9B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project1111", "Project1111\Project1111.vcxproj", "{6AF57183-BE0F-4A77-8A4E-4981E7CB9F22}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "调换数组", "Project1111\Project1111.vcxproj", "{6AF57183-BE0F-4A77-8A4E-4981E7CB9F22}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Proje", "Proje\Proje.vcxproj", "{E514B52A-3ACB-4405-8D60-D2234A0A4BAC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "时间转换", "Proje\Proje.vcxproj", "{E514B52A-3ACB-4405-8D60-D2234A0A4BAC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "质数", "质数\质数.vcxproj", "{D44E90C3-C898-419C-BB8C-43FC73F91BC8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ds", "ds\ds.vcxproj", "{93791DD4-5E1D-47A9-BB91-2E8EB01C75DD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sg", "sg\sg.vcxproj", "{A1100E00-C42C-4633-8B10-60579C170D82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -131,6 +137,30 @@ Global
 		{E514B52A-3ACB-4405-8D60-D2234A0A4BAC}.Release|x64.Build.0 = Release|x64
 		{E514B52A-3ACB-4405-8D60-D2234A0A4BAC}.Release|x86.ActiveCfg = Release|Win32
 		{E514B52A-3ACB-4405-8D60-D2234A0A4BAC}.Release|x86.Build.0 = Release|Win32
+		{D44E90C3-C898-419C-BB8C-43FC73F91BC8}.Debug|x64.ActiveCfg = Debug|x64
+		{D44E90C3-C898-419C-BB8C-43FC73F91BC8}.Debug|x64.Build.0 = Debug|x64
+		{D44E90C3-C898-419C-BB8C-43FC73F91BC8}.Debug|x86.ActiveCfg = Debug|Win32
+		{D44E90C3-C898-419C-BB8C-43FC73F91BC8}.Debug|x86.Build.0 = Debug|Win32
+		{D44E90C3-C898-419C-BB8C-43FC73F91BC8}.Release|x64.ActiveCfg = Release|x64
+		{D44E90C3-C898-419C-BB8C-43FC73F91BC8}.Release|x64.Build.0 = Release|x64
+		{D44E90C3-C898-419C-BB8C-43FC73F91BC8}.Release|x86.ActiveCfg = Release|Win32
+		{D44E90C3-C898-419C-BB8C-43FC73F91BC8}.Release|x86.Build.0 = Release|Win32
+		{93791DD4-5E1D-47A9-BB91-2E8EB01C75DD}.Debug|x64.ActiveCfg = Debug|x64
+		{93791DD4-5E1D-47A9-BB91-2E8EB01C75DD}.Debug|x64.Build.0 = Debug|x64
+		{93791DD4-5E1D-47A9-BB91-2E8EB01C75DD}.Debug|x86.ActiveCfg = Debug|Win32
+		{93791DD4-5E1D-47A9-BB91-2E8EB01C75DD}.Debug|x86.Build.0 = Debug|Win32
+		{93791DD4-5E1D-47A9-BB91-2E8EB01C75DD}.Release|x64.ActiveCfg = Release|x64
+		{93791DD4-5E1D-47A9-BB91-2E8EB01C75DD}.Release|x64.Build.0 = Release|x64
+		{93791DD4-5E1D-47A9-BB91-2E8EB01C75DD}.Release|x86.ActiveCfg = Release|Win32
+		{93791DD4-5E1D-47A9-BB91-2E8EB01C75DD}.Release|x86.Build.0 = Release|Win32
+		{A1100E00-C42C-4633-8B10-60579C170D82}.Debug|x64.ActiveCfg = Debug|x64
+		{A1100E00-C42C-4633-8B10-60579C170D82}.Debug|x64.Build.0 = Debug|x64
+		{A1100E00-C42C-4633-8B10-60579C170D82}.Debug|x86.ActiveCfg = Debug|Win32
+		{A1100E00-C42C-4633-8B10-60579C170D82}.Debug|x86.Build.0 = Debug|Win32
+		{A1100E00-C42C-4633-8B10-60579C170D82}.Release|x64.ActiveCfg = Release|x64
+		{A1100E00-C42C-4633-8B10-60579C170D82}.Release|x64.Build.0 = Release|x64
+		{A1100E00-C42C-4633-8B10-60579C170D82}.Release|x86.ActiveCfg = Release|Win32
+		{A1100E00-C42C-4633-8B10-60579C170D82}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
