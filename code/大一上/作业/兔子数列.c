@@ -15,6 +15,11 @@ int main()
 		f1 = f1 + f2;
 		f2 = f1 + f2;
 	}
-	system("pause");
 	return 0;
 }
+  /*关键字 long int for if return
+  运算符 = <= % + == ++
+  标识符 f1 f2 i printf main
+  常量 20 1 0 2 
+  字符串 \n %12ld  																																														
+  特殊符  # <> ; () {} , 空格    																																														     */

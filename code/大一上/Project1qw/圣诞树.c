@@ -18,5 +18,5 @@ int main()
         printf("\n");
     }
 	system("pause");
-	return 0;
+    return 0;
 }
