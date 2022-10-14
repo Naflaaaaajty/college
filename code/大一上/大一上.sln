@@ -73,6 +73,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "数组找最大值", "数�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "猜数字游戏", "猜数字游戏\猜数字游戏.vcxproj", "{3737A499-AF1C-4536-B32F-CB57D4FF2A65}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "函数调试", "函数调试\函数调试.vcxproj", "{280BB463-F76C-4EA7-BC16-ED9CA95B04D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -361,6 +363,14 @@ Global
 		{3737A499-AF1C-4536-B32F-CB57D4FF2A65}.Release|x64.Build.0 = Release|x64
 		{3737A499-AF1C-4536-B32F-CB57D4FF2A65}.Release|x86.ActiveCfg = Release|Win32
 		{3737A499-AF1C-4536-B32F-CB57D4FF2A65}.Release|x86.Build.0 = Release|Win32
+		{280BB463-F76C-4EA7-BC16-ED9CA95B04D5}.Debug|x64.ActiveCfg = Debug|x64
+		{280BB463-F76C-4EA7-BC16-ED9CA95B04D5}.Debug|x64.Build.0 = Debug|x64
+		{280BB463-F76C-4EA7-BC16-ED9CA95B04D5}.Debug|x86.ActiveCfg = Debug|Win32
+		{280BB463-F76C-4EA7-BC16-ED9CA95B04D5}.Debug|x86.Build.0 = Debug|Win32
+		{280BB463-F76C-4EA7-BC16-ED9CA95B04D5}.Release|x64.ActiveCfg = Release|x64
+		{280BB463-F76C-4EA7-BC16-ED9CA95B04D5}.Release|x64.Build.0 = Release|x64
+		{280BB463-F76C-4EA7-BC16-ED9CA95B04D5}.Release|x86.ActiveCfg = Release|Win32
+		{280BB463-F76C-4EA7-BC16-ED9CA95B04D5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

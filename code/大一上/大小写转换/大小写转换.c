@@ -1,12 +1,18 @@
 #include<stdio.h>
-int main()
-{
-    int ch = 0;
-    while ((ch = getchar()) != EOF)
+int main() {
+    char A = 0;
+    while ((A = getchar())!=EOF ) 
     {
         getchar();
-        putchar(ch + 32);
-        printf("\n");
+        if (A >= 'A' && A <= 'Z') 
+        {
+            putchar(A + 32);
+            printf("\n");
+        }
+        else 
+        {
+            putchar(A - 32);
+            printf("\n");
+        }
     }
-    return 0;
 }
