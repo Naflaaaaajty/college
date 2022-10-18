@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
+
 int main()
 {
 	long f1, f2;
@@ -18,8 +19,8 @@ int main()
 	return 0;
 }
   /*关键字 long int for if return
-  运算符 = <= % + == ++
+  运算符 = <= % + == ++ ,
   标识符 f1 f2 i printf main
   常量 20 1 0 2 
   字符串 \n %12ld  																																														
-  特殊符  # <> ; () {} , 空格    																																														     */
+  特殊符  # <> ; () {} , 空格   */

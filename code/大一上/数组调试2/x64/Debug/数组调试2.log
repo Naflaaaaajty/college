@@ -1,0 +1,7 @@
+﻿  源.c
+C:\Users\nafla\Desktop\college\college\code\大一上\数组调试2\源.c(14,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“unsigned __int64”
+C:\Users\nafla\Desktop\college\college\code\大一上\数组调试2\源.c(14,9): message : 请考虑在格式字符串中使用“%lld”
+C:\Users\nafla\Desktop\college\college\code\大一上\数组调试2\源.c(14,9): message : 请考虑在格式字符串中使用“%Id”
+C:\Users\nafla\Desktop\college\college\code\大一上\数组调试2\源.c(14,9): message : 请考虑在格式字符串中使用“%I64d”
+C:\Users\nafla\Desktop\college\college\code\大一上\数组调试2\源.c(15,2): warning C4013: “system”未定义；假设外部返回 int
+  数组调试2.vcxproj -> C:\Users\nafla\Desktop\college\college\code\大一上\x64\Debug\数组调试2.exe
