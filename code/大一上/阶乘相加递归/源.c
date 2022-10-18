@@ -8,8 +8,6 @@ int dgxj(int c)
 	{
 	    return c*dgxj(c-1);
 	}
-		
-
 }
 int main()
 {
