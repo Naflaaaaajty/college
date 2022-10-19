@@ -1,4 +1,8 @@
 ﻿  game.c
-  源.c
-  正在生成代码...
+C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(48,7): warning C4102: “again”: 未引用的标签
+C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(227): warning C4715: “shu”: 不是所有的控件路径都返回值
+C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(135): warning C4715: “boardif”: 不是所有的控件路径都返回值
+C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(194): warning C4715: “heng”: 不是所有的控件路径都返回值
+C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(254): warning C4715: “youxie”: 不是所有的控件路径都返回值
+C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(282): warning C4715: “zuoxie”: 不是所有的控件路径都返回值
   三子棋.vcxproj -> C:\Users\nafla\Desktop\college\college\code\大一上\x64\Debug\三子棋.exe
