@@ -82,7 +82,7 @@ void move(char board[ROW][COL])
 		if (c >= COL)
 		{
 			p = boardif(board);
-			if (p == 1 || p == 0)
+			if (p == 1 || p == 0 ||p==2)
 				break;
 		}
 		system("cls");
@@ -93,7 +93,7 @@ void move(char board[ROW][COL])
 		if (c >= COL)
 		{
 			p = boardif(board);
-			if (p == 1 || p ==0)
+			if (p == 1 || p ==0 ||p==2)
 				break;
 		}
 	}
@@ -114,7 +114,9 @@ void move(char board[ROW][COL])
 	{
 		Sleep(1500);
 		system("cls");
+		intbord(board);
 		printf("Æ½¾Ö\n");
+		Sleep(1500);
 		goto again;
 	}
 }
@@ -286,7 +288,7 @@ int reopen(char board[ROW][COL])
 	{
 		for (int j = 0; j < COL; j++)
 		{
-			if (board[ROW][COL] == ' ')
+			if(board[i][j] == ' ')
 				goto final;
 		}
 	}

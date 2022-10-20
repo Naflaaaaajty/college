@@ -3,8 +3,8 @@
 #include<time.h>
 
 #pragma once
-#define ROW 10
-#define	COL 10
+#define ROW 3
+#define	COL 3
 void game();
 void menu();
 void disp(char board[ROW][COL]);
