@@ -42,21 +42,13 @@ void disp(char board[ROW][COL])
 }
 void move(char board[ROW][COL])
 {
-	int a = 0, b = 0,p=0,c=0;
+	int a = 0, b = 0,p=COL+1,c=0;
+	again:
 	while (1)
 	{	
-	again:
 		system("cls");
 		disp(board);
-		//if (c >= COL)
-		//{
-		//	p = boardif(board);
-		//	if (p == 1 || p==2)
-		//		break;
-		//}
 		c++;
-		//system("cls");
-		//disp(board);
 		system("cls");
 	defalult:
 		disp(board);
@@ -84,54 +76,63 @@ void move(char board[ROW][COL])
 			system("cls");
 			goto defalult;
 		}
+		system("cls");
+		disp(board);
+		Sleep(1500);
 		if (c >= COL)
 		{
 			p = boardif(board);
-			if (p == 1 || p == COL+1)
+			if (p == 1 || p == 0)
 				break;
 		}
+		system("cls");
 		aimove(board);
+		disp(board);
+		Sleep(1500);
+		system("cls");
 		if (c >= COL)
 		{
 			p = boardif(board);
-			if (p == 1 || p == COL + 1)
+			if (p == 1 || p ==0)
 				break;
 		}
-		/*system("pause");*/
 	}
 	printf("游戏结束\n");
 	if (p == 1)
 	{
-		disp(board);
 		Sleep(1500);
 		system("cls");
-
 		printf("电脑获胜\n");
 	}
-	else if (p == COL + 1) 
+	else if (p ==0) 
 	{
-		disp(board);
 		Sleep(1500);
 		system("cls");
-
 		printf("你终于他妈赢了\n");
+	}
+	else if (p == 2)
+	{
+		Sleep(1500);
+		system("cls");
+		printf("平局\n");
+		goto again;
 	}
 }
 int boardif(char board[ROW][COL])
 {
-	int a = 0, b = 0, c = 0, d = 0;
+	int a = 0, b = 0, c = 0, d = 0,e=0;
 	a = heng(board);
 	b = shu(board);
 	c = youxie(board);
 	d = zuoxie(board);
+	e = reopen(board);
 	if (a == 1 || b == 1 || c == 1 || d == 1)
-	{
 		return 1;
-	}
-	if (a == COL + 1 || b == COL + 1 || c == COL + 1 || d == COL + 1)
-	{
-		return COL + 1;
-	}
+	if (a == 0 || b == 0 || c == 0 || d == 0)
+		return 0;
+	if (e == 2)
+		return 2;
+
 }
 void aimove(char board[ROW][COL])
 {
@@ -147,7 +148,6 @@ again:
 	if (board[random_num][random_num2] == ' ')
 	{
 		board[random_num][random_num2] = '#';
-		goto final;
 	}
 	else 
 	{
@@ -157,73 +157,78 @@ again:
 		system("cls");
 		goto again;
 	}
-	final:;
 }
 int heng(char board[ROW][COL])
 {
 	int i = 0, j = 0;
 	for (i = 0; i < COL; i++)
 	{
+		int j = 0;
 		for (j = 0; j < ROW; j++)
 		{
 			if (board[i][j] != '#')
 				goto again;
 		}
-		if (j == COL - 1)
+		if (j == COL)
 		{
 			return 1;
 			break;
 		}
 	again:;
     }
+
 	int k = 0, l = 0;
 	for (k= 0; k < COL;k++)
 	{
+		int l = 0;
 		for (l = 0; l < ROW; l++)
 		{
 			if (board[k][l] != '*')
 				goto agai;
 		}
-		if (l == COL - 1) 
+		if (l == COL) 
 		{
-			return COL + 1;
+			return 0;
 			break;
 		}
 	agai:;
 	}
+
 }
 int shu(char board[ROW][COL])
 {
 	int i = 0, j = 0;
 	for (i = 0; i < ROW; i++)
 	{
+		int j = 0;
 		for (j = 0; j < COL; j++)
 		{
 			if (board[j][i] != '*')
-				goto again;
+				break;
 		}
-		if (j == COL - 1)
+		if (j == COL)
 		{
-		return COL + 1;
+		return 0;
 		break;
 		}
-	again:;
 	}
+
 	int k = 0, l = 0;
 	for (k = 0; k < ROW; k++)
 	{
+		int k = 0;
 		for (l = 0; l < COL; l++)
 		{
 			if (board[k][l] != '#')
-				goto agai;
+				break;
 		}
-		if (l == COL - 1)
+		if (l == COL)
 		{
 			return 1;
 			break;
 		}
-	agai:;
 	}
+
 }
 int youxie(char board[ROW][COL])
 {
@@ -231,25 +236,23 @@ int youxie(char board[ROW][COL])
 	for (j = 0; j < COL; j++)
 	{
 		if (board[j][j] != '*')
-			goto final;
+			break;
 		if (j == COL - 1)
 		{
-			return COL + 1;
+			return 0;
 			break;
 		}
-		final:;
 	}
 	int i = 0;
 	for (i = 0; i< COL; i++)
 	{
 		if (board[i][i] != '#')
-			goto fina;
+			break;
 		if (i == COL - 1)
 		{
 			return 1;
 			break;
 		}
-		fina:;
 	}
 }
 int zuoxie(char board[ROW][COL])
@@ -258,25 +261,35 @@ int zuoxie(char board[ROW][COL])
 	for (j = 0,i=COL-1; j < COL; j++,i--)
 	{
 		if (board[j][i] != '*')
-			goto final;
+			break;
 		if (j == COL - 1)
 		{
-			return COL + 1;
+			return 0;
 			break;
 		}
-		final:;
 	}
 	int k = 0, l= COL - 1;
 	for (k = 0, l = COL - 1; k < COL; k++, l--)
 	{
 		if (board[k][l] != '#')
-			goto fina;
+			break;
 		if (k == COL - 1)
 		{
 			return 1;
 			break;
 		}
-		fina:;
 	}
-
+}
+int reopen(char board[ROW][COL])
+{
+	for (int i = 0; i < COL; i++)
+	{
+		for (int j = 0; j < COL; j++)
+		{
+			if (board[ROW][COL] == ' ')
+				goto final;
+		}
+	}
+	return 2;
+	final:;
 }

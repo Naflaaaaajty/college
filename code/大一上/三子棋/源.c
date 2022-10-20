@@ -10,7 +10,7 @@ int main()
 		printf("ÇëÊäÈë>");
 		scanf("%d", &input);
 		system("cls");
-		Sleep(800);
+		//Sleep(800);
 		switch (input)
 		{
 		case 1:
