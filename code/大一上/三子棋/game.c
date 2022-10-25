@@ -139,13 +139,12 @@ int boardif(char board[ROW][COL])
 void aimove(char board[ROW][COL])
 {
 again:
-	srand((unsigned)time(NULL));
+	srand((unsigned int)time(NULL));
 	int random_num = rand() % COL;
 	system("cls");
 	printf("电脑正在输入\n");
 	Sleep(1500);
 	system("cls");
-	srand((unsigned)time(NULL));
 	int random_num2 = rand() % COL ;
 	if (board[random_num][random_num2] == ' ')
 	{
@@ -155,7 +154,7 @@ again:
 	{
 		system("cls");
 		printf("电脑正在输入\n");
-		Sleep(1000);
+		Sleep(100);
 		system("cls");
 		goto again;
 	}

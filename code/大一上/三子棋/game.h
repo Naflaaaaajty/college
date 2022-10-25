@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<windows.h>
 #include<time.h>
-
 #pragma once
 #define ROW 3
 #define	COL 3
