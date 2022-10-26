@@ -1,6 +1,6 @@
-//#define _CRT_SECURE_NO_WARNINGS
-//#include<stdio.h>
-//#include<math.h>
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<math.h>
 //int main()
 //{
 //	float a=0.0;
@@ -11,12 +11,17 @@
 //	printf("%f", a);
 //	system("pause");
 //	return 0;
-
-#include <stdio.h>
-int num = 10;
+//
+//#include <stdio.h>
+//int num = 10;
+//int main()
+//{
+//    int num = 1;
+//    printf("num = %d\n", num);
+//    return 0;
+//}
 int main()
 {
-    int num = 1;
-    printf("num = %d\n", num);
-    return 0;
+
+	return 0;
 }
