@@ -24,6 +24,7 @@
     <ProjectGuid>{dab0aa4a-ec92-49ec-813f-6ae73c925605}</ProjectGuid>
     <RootNamespace>ffsfsfs</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>两侧打印</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

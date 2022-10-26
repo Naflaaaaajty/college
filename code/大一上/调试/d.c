@@ -22,6 +22,8 @@
 //}
 int main()
 {
-
+	char arr[20];
+	scanf("%s", arr);
+	puts(arr);
 	return 0;
 }

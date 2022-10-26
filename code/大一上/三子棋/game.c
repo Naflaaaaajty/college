@@ -170,11 +170,8 @@ int heng(char board[ROW][COL])
 			if (board[i][j] != '#')
 				goto again;
 		}
-		if (j == COL)
-		{
 			return 1;
 			break;
-		}
 	again:;
     }
 
@@ -187,11 +184,8 @@ int heng(char board[ROW][COL])
 			if (board[k][l] != '*')
 				goto agai;
 		}
-		if (l == COL) 
-		{
 			return 0;
 			break;
-		}
 	agai:;
 	}
 

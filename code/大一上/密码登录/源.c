@@ -4,22 +4,22 @@
 
 int main()
 {
-	int i = 0;
-	int sz =16;
+	int i = 0,j=0;
+	char brr[20] = { 0 };
 	printf("ÇëÊäÈëÃÜÂë£º");
-	for (i = 0; i< 4; i++)
+	for (i = 0; i< 3; i++)
 	{
-		char brr[20]={0};
-		scanf("%s", &brr);
+		scanf("%s", brr);
 		if (strcmp(brr,"jty") == 0)
 		{
 			printf("»¶Ó­µÇÂ¼\n");
+			j++;
 			break;
 		}
-		else if(i!=3)
+		else if(i!=2)
 			printf("ÇëÖØÊÔ£º");
 	}
-	if (i == 4)
+	if (j== 0)
 		printf("¿ì¹ö\n");
 	system("pause");
 	return 0;
