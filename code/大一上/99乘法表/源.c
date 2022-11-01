@@ -2,11 +2,12 @@
 #include<stdio.h>
 int main()
 {
-    int i, j;
-    for (i = 1; i <= 9; i++) 
+    int i, j,b;
+    scanf("%d", &b);
+    for (i = 1; i <= b; i++) 
     {
-        for (j = 1; j <= 9; j++)
-        printf("%d*%d=%2d\t", i, j, i * j);
+        for (j = 1; j <= b; j++)
+        printf("%2d*%2d=%-4d", i, j, i * j);
         printf("\n");
     }
 	system("pause");
