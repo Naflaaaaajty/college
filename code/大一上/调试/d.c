@@ -129,21 +129,127 @@
 //	printf("%d", c);
 //	return 0;
 //}
-int j();
-int main()
-{
-	int a = 0, b = 0;
-	scanf("%d", &a);
-	b=j(a);
-	printf("%d", b);
-	return 0;
-}
-int j(int a)
-{
+//int j();
+//int main()
+//{
+//	int a = 0, b = 0;
+//	scanf("%d", &a);
+//	b=j(a);
+//	printf("%d", b);
+//	return 0;
+//}
+//int j(int a)
+//{
+//
+//	if (a <= 10)
+//		return a;
+//	else
+//		return a%10+j(a / 10);
+//
+//}
+//int main()
+//{
+//	int j = 6, i = 4;
+//	j = ++i;
+//	j = i++;
+//	return 0;
+//int main()
+//{
+//	char ch[]={0};
+//	int i = 0;
+//	scanf("%s", ch);
+//	for (i = 0; ch[i] != '\0'; i++);
+//	printf("%d",i);
+//	system("pause");
+//	return 0;
+//}
+//int Strlen( char* ch)
+//{
+//	if (*ch == '\0')
+//		return 0;
+//	else
+//		return 1 + Strlen(ch+1);
+//}
+//int main()
+//{
+//	char ch[20] = { 0 };
+//	scanf("%s", ch);
+//	int a = Strlen(ch);
+//	printf("%d", a);
+//	return 0;
+//}
 
-	if (a <= 10)
-		return a;
-	else
-		return a%10+j(a / 10);
 
-}
+
+
+//size_t my_strlen(const char* str) {
+//    if (*str != '\0') {
+//        return 1 + my_strlen(str + 1);
+//    }
+//    else {
+//        return 0;
+//    }
+//}
+//
+//int main() {
+//    char arr[] = "abcdef";
+//    int len = my_strlen(arr);
+//    printf("len = %d\n", len);
+//
+//    return 0;
+//}
+
+//int main()
+//{
+//	int year = 0;
+//	for (year = 1000; year <= 2000; year++)
+//	{
+//	
+//		if (year % 4 == 0)  
+//		{
+//			if (year % 100 != 0) 
+//			{
+//				printf("%d ", year);
+//			}
+//		}
+//		if (year % 400 == 0) 
+//		{
+//			printf("%d ", year);
+//		}
+//	}
+//
+//
+//	return 0;
+//}
+
+
+
+//int main()
+//{
+//	int year = 0;
+//	for (year = 1000; year <= 2000; year++)
+//	{
+//		if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+//		{
+//			printf("%d ", year);
+//		}
+//	}
+//
+//	return 0;
+//}
+//void print(int a)
+//{
+//	if (a != 0)
+//	{
+//		printf("%d ", a % 10);
+//		a /= 10;
+//		print(a);
+//	}
+//}
+//int main()
+//{
+//	int a;
+//	scanf("%d", &a);
+//	print(a);
+//	return 0;
+//}
