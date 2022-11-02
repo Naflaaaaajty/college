@@ -253,3 +253,153 @@
 //	print(a);
 //	return 0;
 //}
+//int main()
+//{
+//	int a;
+//	while (scanf("%d", &a) != EOF)
+//	{
+//		for (int i = 1; i <= a; i++)
+//		{
+//			for (int j = i; j < a; j++)
+//				printf(" ");
+//			for (int b = 0; b < i; b++)
+//				printf("* ");
+//			printf("\n");
+//		}
+//		
+//
+//	}
+//	return 0;
+// }
+//#include <stdio.h>
+
+//int main()
+//{
+//    int n = 0;
+//    //多组输入
+//    while (~scanf(" %d", &n))
+//    {
+//        //控制行数
+//        for (int i = 0; i < n; i++)
+//        {
+//            //打印一行
+//            //打印空格
+//            for (int j = 0; j < n - 1 - i; j++)
+//            {
+//                printf(" ");
+//            }
+//            //打印*空格
+//            for (int k = 0; k <= i; k++)
+//            {
+//                printf("* ");
+//            }
+//            printf("\n");
+//        }
+//    }
+//
+//    return 0;
+//}
+//int main()
+//{
+//	int a;
+//	while (scanf("%d", &a) != EOF)
+//	{
+//		for (int i = 0; i < a; i++)
+//		{
+//			for(int j=0;j<i;j++)
+//				printf(" ");
+//			for(int k=0;k<a-i;k++)
+//				printf("* ");
+//			printf("\n");
+//		}
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	int a;
+//	while (scanf("%d", &a) != EOF)
+//	{
+//		for (int i = 1; i <= a+1; i++)
+//		{
+//			for (int j = i; j < a+1; j++)
+//				printf(" ");
+//			for (int b = 0; b < i; b++)
+//				printf("* ");
+//			printf("\n");
+//
+//		}
+//		for (int i = 0; i < a; i++)
+//			{
+//				for(int j=0;j<i+1;j++)
+//					printf(" ");
+//				for(int k=0;k<a-i;k++)
+//					printf("* ");
+//				printf("\n");
+//			}
+//	}
+//	return 0;	
+//int main()
+//{
+//	int a;
+//	while (scanf("%d", &a) != EOF)
+//	{
+//		for (int j = 0; j <= a; j++)
+//		{
+//			for (int i = 0; i<a+1-j; i++)
+//				printf("* ");
+//			printf("\n");
+//
+//		}
+//		for (int j = 0; j < a; j++)
+//		{
+//			for(int i=0;i<j+2;i++)
+//				printf("* ");
+//			printf("\n");
+//
+//		}
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	int a;
+//	while (scanf("%d", &a) != EOF)
+//	{
+//		for (int i = 0; i <= a; i++)
+//		{
+//			for (int j = 0; j < a * 2 - i*2; j++)
+//				printf(" ");
+//			for (int k = 0; k < i + 1; k++)
+//				printf("*");
+//			printf("\n");
+//		}
+//		for (int i = 0; i < a; i++)
+//		{
+//			for (int j = 0; j < (i+1)*2; j++)
+//				printf(" ");
+//			for (int k = 0; k < a-i; k++)
+//				printf("*");
+//			printf("\n");
+//
+//		}
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	int a;
+//	while (scanf("%d", &a) != EOF)
+//	{
+//		for (int i = 0; i < a; i++)
+//		{
+//			for
+//	   }
+//	}
+//	return 0;
+//}
+int main()
+{
+
+	return 0;
+}
