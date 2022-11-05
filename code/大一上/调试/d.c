@@ -1,6 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<math.h>
+#include<string.h>
+
 //int main()
 //{
 //	float a=0.0;
@@ -398,8 +400,124 @@
 //	}
 //	return 0;
 //}
+//int fib(int a)
+//{
+//	int c = 0, b = 1,d=1,e=1;
+//	for (d = 0; d < a; d++)
+//	{
+//		e = c + b;
+//		c = b;
+//		b = e;
+//	}
+//	return e;
+//}
+//int main()
+//{
+//	int a, b, c;
+//	scanf("%d", &a);
+//	b=fib(a);
+//	printf("%d", b);
+//	return 0;
+//}
+//char reverse_string(const char* string)
+//{
+//	if (*string == '\0')
+//		return ;
+//	reverse_string(string + 1);
+//	printf("%c", *string);
+//
+//}
+//int main()
+//{
+//	char arr[20] = { 0 };
+//	scanf("%s", arr);
+//	reverse_string(arr);
+//	return 0;
+//}
+//int main()
+//{
+//	int a;
+//	scanf("%d", &a);
+//	for (int i = 0; i < a; i++)
+//		printf("* ");
+//	printf("\n");
+//	for (int i=0; i < a - 2; i++)
+//	{
+//		printf("* ");
+//		for(int j=0;j<a-2;j++)
+//			printf("  ");
+//		printf("* ");
+//		printf("\n");
+//
+//	}
+//	for (int i = 0; i < a; i++)
+//		printf("* ");
+//	printf("\n");
+//	return 0;
+//}
+//int main()
+//{
+//	int a;
+//	scanf("%d", &a);
+//	printf("*\n* *\n");
+//	for (int i = 1; i < a-2; i++)
+//	{
+//		printf("* ");
+//		for(int j=0;j<i;j++)
+//			printf("  ");
+//		printf("*");
+//		printf("\n");
+//
+//	}
+//	for (int i = 0; i < a; i++)
+//	{
+//		printf("* ");
+//
+//	}
+//	return 0;
+//}
+//void bubble(int arr[], int sz)
+//{
+//	int jh, count = 1;
+//	for (int i = 0; i < sz; i++)
+//	{
+//		for (int j = 0; j < sz - i; j++)
+//		{
+//			if (arr[j] > arr[j + 1])
+//			{
+//				jh = arr[j];
+//				arr[j] = arr[j + 1];
+//				arr[j + 1] = jh;
+//				count++;
+//			}
+//		}
+//		if (count == 1)
+//			break;
+//	}
+//}
+//int main()
+//{
+//	int arr[20];
+//	int a;
+//	scanf("%d", &a);
+//	for (int i = 0; i < a; i++)
+//	{
+//		scanf("%d", &arr[i]);
+//	}
+//	getchar();
+//	scanf("%d", &arr[a]);
+//	int sz = sizeof(arr) / sizeof(arr[0]) - 1;
+//	bubble(arr, sz);
+//	for (int i = a+1; i>0; i--)
+//	{
+//		printf("%d ", arr[20-i]);
+//	}
+//	return 0;
+//}
 int main()
 {
-
+	char arr[20] = "abcd";
+	int t = sizeof(arr) / sizeof(arr[0]);
+	int b = strlen(arr);
 	return 0;
 }

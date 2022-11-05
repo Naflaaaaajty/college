@@ -129,6 +129,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "飞机", "飞机\飞机.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "x字", "x字\x字.vcxproj", "{46273300-0E88-4B0D-84CB-6C218443A2C6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "数组输入数再排列", "数组输入数再排列\数组输入数再排列.vcxproj", "{70B9D2F3-46D2-4FEF-8AAA-591DAD2FF968}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -641,6 +643,14 @@ Global
 		{46273300-0E88-4B0D-84CB-6C218443A2C6}.Release|x64.Build.0 = Release|x64
 		{46273300-0E88-4B0D-84CB-6C218443A2C6}.Release|x86.ActiveCfg = Release|Win32
 		{46273300-0E88-4B0D-84CB-6C218443A2C6}.Release|x86.Build.0 = Release|Win32
+		{70B9D2F3-46D2-4FEF-8AAA-591DAD2FF968}.Debug|x64.ActiveCfg = Debug|x64
+		{70B9D2F3-46D2-4FEF-8AAA-591DAD2FF968}.Debug|x64.Build.0 = Debug|x64
+		{70B9D2F3-46D2-4FEF-8AAA-591DAD2FF968}.Debug|x86.ActiveCfg = Debug|Win32
+		{70B9D2F3-46D2-4FEF-8AAA-591DAD2FF968}.Debug|x86.Build.0 = Debug|Win32
+		{70B9D2F3-46D2-4FEF-8AAA-591DAD2FF968}.Release|x64.ActiveCfg = Release|x64
+		{70B9D2F3-46D2-4FEF-8AAA-591DAD2FF968}.Release|x64.Build.0 = Release|x64
+		{70B9D2F3-46D2-4FEF-8AAA-591DAD2FF968}.Release|x86.ActiveCfg = Release|Win32
+		{70B9D2F3-46D2-4FEF-8AAA-591DAD2FF968}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
