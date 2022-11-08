@@ -131,6 +131,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "x字", "x字\x字.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "数组输入数再排列", "数组输入数再排列\数组输入数再排列.vcxproj", "{70B9D2F3-46D2-4FEF-8AAA-591DAD2FF968}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "筛选法求素数", "筛选法求素数\筛选法求素数.vcxproj", "{0C77B0BD-0A59-4EB3-A6F7-96F090C558A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -651,6 +653,14 @@ Global
 		{70B9D2F3-46D2-4FEF-8AAA-591DAD2FF968}.Release|x64.Build.0 = Release|x64
 		{70B9D2F3-46D2-4FEF-8AAA-591DAD2FF968}.Release|x86.ActiveCfg = Release|Win32
 		{70B9D2F3-46D2-4FEF-8AAA-591DAD2FF968}.Release|x86.Build.0 = Release|Win32
+		{0C77B0BD-0A59-4EB3-A6F7-96F090C558A4}.Debug|x64.ActiveCfg = Debug|x64
+		{0C77B0BD-0A59-4EB3-A6F7-96F090C558A4}.Debug|x64.Build.0 = Debug|x64
+		{0C77B0BD-0A59-4EB3-A6F7-96F090C558A4}.Debug|x86.ActiveCfg = Debug|Win32
+		{0C77B0BD-0A59-4EB3-A6F7-96F090C558A4}.Debug|x86.Build.0 = Debug|Win32
+		{0C77B0BD-0A59-4EB3-A6F7-96F090C558A4}.Release|x64.ActiveCfg = Release|x64
+		{0C77B0BD-0A59-4EB3-A6F7-96F090C558A4}.Release|x64.Build.0 = Release|x64
+		{0C77B0BD-0A59-4EB3-A6F7-96F090C558A4}.Release|x86.ActiveCfg = Release|Win32
+		{0C77B0BD-0A59-4EB3-A6F7-96F090C558A4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

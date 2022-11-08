@@ -514,10 +514,98 @@
 //	}
 //	return 0;
 //}
-int main()
-{
-	char arr[20] = "abcd";
-	int t = sizeof(arr) / sizeof(arr[0]);
-	int b = strlen(arr);
-	return 0;
-}
+//int main()
+//{
+//	char arr[20] = "abcd";
+//	int t = sizeof(arr) / sizeof(arr[0]);
+//	int b = strlen(arr);
+//	return 0;
+//}
+//void change(int *a, int *b)
+//{
+//	int tmp=0;
+//	for (int i=0; i < 5; i++)
+//	{
+//		tmp = *(a + i);
+//		*(a+i) = *(b+i);
+//		*(b + i) = tmp;
+//		//a + 1;
+//		//b + 1;
+//	}
+//}
+//int main()
+//{
+//	int arr[5], brr[5];
+//	for (int i = 0; i < 5; i++)
+//	{
+//		scanf("%d", &arr[i]);
+//	}
+//	printf("\n");
+//	for (int i = 0; i < 5; i++)
+//	{
+//		scanf("%d", &brr[i]);
+//		
+//	}
+//	printf("\n");
+//	for (int i = 0; i < 5; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}	
+//	printf("\n");
+//	for (int i = 0; i < 5; i++)
+//	{
+//		printf("%d ", brr[i]);
+//	}
+//	change(arr, brr);
+//	printf("\n");
+//	for (int i = 0; i < 5; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}	
+//	printf("\n");
+//
+//	for (int i = 0; i < 5; i++)
+//	{
+//		printf("%d ", brr[i]);
+//	}
+//	return 0;
+//}
+//init(int* a)
+//{
+//	for (int i = 0; i < 5; i++)
+//	{
+//		*(a+1) = 0;
+//	}
+//}
+//reverse(int* a,int sz)
+//{
+//	int tmp;
+//	int i = 0;
+//	while (i <= sz - 1)
+//	{
+//		 tmp=*(a + i) ;
+//		 *(a + i) = *(a + sz - 1);
+//		 *(a + sz - 1) = tmp;
+//		 i++;
+//		 sz--;
+//	}
+//}
+//print(int* a)
+//{
+//	for (int i = 0; i < 6; i++)
+//		printf("%d ", *(a + i));
+//}
+//
+//int main()
+//{
+//	int arr[6];
+//	init(arr);
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	for (int i = 0; i < 6; i++)
+//			{
+//				scanf("%d", &arr[i]);
+//			}
+//	reverse(arr,sz);
+//	print(arr);
+//	return 0;
+//}
