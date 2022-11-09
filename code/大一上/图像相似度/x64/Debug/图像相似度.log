@@ -1,0 +1,7 @@
+﻿  源.c
+C:\Users\nafla\Desktop\college\college\code\大一上\图像相似度\源.c(10,29): warning C4244: “函数”: 从“float”转换到“size_t”，可能丢失数据
+C:\Users\nafla\Desktop\college\college\code\大一上\图像相似度\源.c(12,26): warning C4244: “函数”: 从“float”转换到“size_t”，可能丢失数据
+C:\Users\nafla\Desktop\college\college\code\大一上\图像相似度\源.c(13,29): warning C4244: “函数”: 从“float”转换到“size_t”，可能丢失数据
+C:\Users\nafla\Desktop\college\college\code\大一上\图像相似度\源.c(15,26): warning C4244: “函数”: 从“float”转换到“size_t”，可能丢失数据
+C:\Users\nafla\Desktop\college\college\code\大一上\图像相似度\源.c(36,2): warning C4013: “system”未定义；假设外部返回 int
+  图像相似度.vcxproj -> C:\Users\nafla\Desktop\college\college\code\大一上\x64\Debug\图像相似度.exe
