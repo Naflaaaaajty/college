@@ -1,13 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "game.h"
-void game()
-{
-	char board[ROW][COL];
-	intbord(board);
-	disp(board);
-	move(board);
-	system("pause");
-}
 void intbord(char board[ROW][COL])
 {
 	for (int i = 0; i < ROW; i++)
@@ -288,3 +280,5 @@ int reopen(char board[ROW][COL])
 	return 2;
 	final:;
 }
+
+

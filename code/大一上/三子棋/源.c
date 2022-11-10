@@ -2,6 +2,7 @@
 #include "game.h"
 int main()
 {	
+	srand((unsigned int)time(NULL));
 	int input = 0;
 	do
 	{
@@ -10,7 +11,6 @@ int main()
 		printf("ÇëÊäÈë>");
 		scanf("%d", &input);
 		system("cls");
-		//Sleep(800);
 		switch (input)
 		{
 		case 1:
@@ -29,6 +29,14 @@ int main()
 	system("pause");
 	return 0;
 }
+void game()
+{
+	char board[ROW][COL];
+	intbord(board);
+	disp(board);
+	move(board);
+	system("pause");
+}
 void menu()
 {
 	printf("*******************************\n");
@@ -37,4 +45,3 @@ void menu()
 	printf("*********   Èý×ÓÆå  ***********\n");
 	printf("*******************************\n");
 }
-

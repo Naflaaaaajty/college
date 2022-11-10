@@ -1,10 +1,10 @@
 ﻿  game.c
   源.c
   正在生成代码...
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(138): warning C4715: “boardif”: 不是所有的控件路径都返回值
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(252): warning C4715: “youxie”: 不是所有的控件路径都返回值
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(290): warning C4715: “reopen”: 不是所有的控件路径都返回值
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(192): warning C4715: “heng”: 不是所有的控件路径都返回值
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(227): warning C4715: “shu”: 不是所有的控件路径都返回值
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(277): warning C4715: “zuoxie”: 不是所有的控件路径都返回值
+C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(130): warning C4715: “boardif”: 不是所有的控件路径都返回值
+C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(282): warning C4715: “reopen”: 不是所有的控件路径都返回值
+C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(269): warning C4715: “zuoxie”: 不是所有的控件路径都返回值
+C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(244): warning C4715: “youxie”: 不是所有的控件路径都返回值
+C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(219): warning C4715: “shu”: 不是所有的控件路径都返回值
+C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(184): warning C4715: “heng”: 不是所有的控件路径都返回值
   三子棋.vcxproj -> C:\Users\nafla\Desktop\college\college\code\大一上\x64\Debug\三子棋.exe
