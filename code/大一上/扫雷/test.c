@@ -11,11 +11,11 @@ void game()
 	show = (char**)malloc(ROWs * sizeof(char*));
 	for (int i = 0; i < ROWs; i++)
 		show[i] = (char*)malloc(ROWs * sizeof(char));
-	initboardshow(/*mine,*/ ROWs, COLs,'*');
-	initboardmine(/*show,*/ ROWs, COLs,'0');
-	setmine(/*mine,*/ ROW, COL);
-	displayshow(/*show,*/ROW,COL);
-	findmine(/*mine,show,*/ ROW, COL);
+	initboardshow(ROWs, COLs,'*');
+	initboardmine(ROWs, COLs,'0');
+	setmine(ROW, COL);
+	displayshow(ROW,COL);
+	findmine(ROW, COL);
 }
 void menu()
 {
@@ -25,7 +25,7 @@ void menu()
 	printf("*********   É¨À×    ***********\n");
 	printf("*******************************\n");
 }
-void initboardshow(/*char board[][],*/ int rows, int cols, char set)
+void initboardshow( int rows, int cols, char set)
 {
 	int i = 0;
 	for (i = 0; i < rows; i++)
@@ -37,7 +37,7 @@ void initboardshow(/*char board[][],*/ int rows, int cols, char set)
 		}
 	}
 }
-void initboardmine(/*char board[][],*/ int rows, int cols, char set)
+void initboardmine( int rows, int cols, char set)
 {
 	int i = 0;
 	for (i = 0; i < rows; i++)
@@ -49,7 +49,7 @@ void initboardmine(/*char board[][],*/ int rows, int cols, char set)
 		}
 	}
 }
-void setmine(/*char mine[ROWs][COLs], */int row, int col)
+void setmine(int row, int col)
 {
 	int count = EASY_COUNT;
 	while (count)
@@ -63,7 +63,7 @@ void setmine(/*char mine[ROWs][COLs], */int row, int col)
 		}
 	}
 }
-void displayshow(/*char board[ROWs][COLs],*/ int row, int col)
+void displayshow(int row, int col)
 {
 	int i = 0;
 	int j = 0;
@@ -84,13 +84,35 @@ void displayshow(/*char board[ROWs][COLs],*/ int row, int col)
 	}
 	printf("---------É¨À×----------\n");
 }
-void findmine(/*char mine[ROWs][COLs], char show[ROWs][COLs], */int row, int col)
+void displaymine(int row, int col)
+{
+	int i = 0;
+	int j = 0;
+	printf("---------É¨À×----------\n");
+	for (j = 0; j <= col; j++)
+	{
+		printf("%2d ", j);
+	}
+	printf("\n");
+	for (i = 1; i <= row; i++)
+	{
+		printf("%2d ", i);
+		for (j = 1; j <= col; j++)
+		{
+			printf(" %c ", mine[i][j]);
+		}
+		printf("\n");
+	}
+	printf("---------É¨À×----------\n");
+}
+void findmine(int row, int col)
 {
 	int x = 0,y=0,X=0,Y=0,WIN = 0,input=0;
-	while (win < (row * col - EASY_COUNT))
+	while (win < (row * col - EASY_COUNT) && WIN != EASY_COUNT)
 	{
 		system("cls");
-		displayshow(/*show,*/ ROW, COL);
+		displayshow( ROW, COL);
+		//displaymine(ROW, COL);
 		printf("1:ÅÅ²é     2£º±ê¼Ç>");
 		scanf("%d", &input);
 		switch (input)
@@ -110,13 +132,14 @@ void findmine(/*char mine[ROWs][COLs], char show[ROWs][COLs], */int row, int col
 			{
 				printf("ºÜÒÅº¶£¬Äã±»Õ¨ËÀÁË\n");
 				Sleep(1000);
-				displayshow(/*mine,*/ ROW, COL);
+				displaymine(ROW, COL);
 				Sleep(3000);
 				goto final;
 			}
 			else
 			{
 				find(x, y);
+				system("cls");
 				displayshow(ROW, COL);
 			}
 		}
@@ -146,17 +169,11 @@ void findmine(/*char mine[ROWs][COLs], char show[ROWs][COLs], */int row, int col
 			Sleep(1000);
 			break;
 		}
-		if (win == (row * col - EASY_COUNT) || WIN == EASY_COUNT)
-		{
-			printf("¹§Ï²Äã£¬ÅÅÀ×³É¹¦\n");
-			displayshow(/*mine,*/ ROW, COL);
-			Sleep(3000);
-		}
 	}
 	if (win == (row * col - EASY_COUNT) || WIN== EASY_COUNT)
 	{
 		printf("¹§Ï²Äã£¬ÅÅÀ×³É¹¦\n");
-		displayshow(/*mine,*/ ROW, COL);
+		displaymine(ROW, COL);
 		Sleep(3000);
 	}
 	final:;
@@ -169,30 +186,29 @@ int get_mine_count(int x, int y)
 		mine[x + 1][y - 1] + mine[x + 1][y] + mine[x + 1][y + 1] +
 		mine[x][y + 1] + mine[x - 1][y + 1] - 8 * '0');
 	}
-	
 }
 void find(int x, int y)
 {
-	if ( x >= 1 && x <= ROW && y >= 1 && y <= COL && (show[x][y] = '*') &&(mine[x][y] != '1'))
+	if ( x >= 1 && x <= ROW && y >= 1 && y <= COL )
 	{
-		int n = get_mine_count(/*mine,*/ x, y);
+		int n = get_mine_count(x, y);
 		show[x][y] = n + '0';
 		win++;
-		if(get_mine_count(x+1, y+1)!=0)
+		if(show[x+1][y+1]=='*'&& mine[x+1][y+1] !='1')
 			find(x + 1, y + 1);
-		if (get_mine_count( x-1, y-1) != 0)
+		if (get_mine_count(x - 1, y - 1) == 0 && show[x - 1][y - 1] == '*' && mine[x - 1][y -1] != '1')
 			find( x - 1, y - 1);		
-		if (get_mine_count(x+1, y) != 0)
+		if (get_mine_count(x + 1, y) == 0 && show[x + 1][y ] == '*' && mine[x + 1][y ] != '1')
 			find( x + 1, y );
-		if (get_mine_count( x, y+1) != 0)
+		if (get_mine_count(x, y + 1) == 0 && show[x][y + 1] == '*' && mine[x][y + 1] != '1')
 			find( x, y + 1);		
-		if (get_mine_count( x-1, y) != 0)
+		if (get_mine_count(x - 1, y) == 0 && show[x - 1][y ] == '*' && mine[x -1][y ] != '1')
 			find( x - 1, y);
-		if (get_mine_count( x, y-1) != 0)
+		if (get_mine_count(x, y - 1) == 0 && show[x ][y -1] == '*' && mine[x][y-1] != '1')
 			find(x , y - 1);
-		if (get_mine_count(x+1, y-1) != 0)
+		if (get_mine_count(x + 1, y - 1) == 0 && show[x + 1][y - 1] == '*' && mine[x + 1][y - 1] != '1')
 			find( x+1, y - 1);
-		if (get_mine_count( x-1, y+1) != 0)
+		if (get_mine_count(x - 1, y + 1) == 0 && show[x - 1][y + 1] == '*' && mine[x - 1][y + 1] != '1')
 			find( x - 1, y + 1);
 	}
 }
