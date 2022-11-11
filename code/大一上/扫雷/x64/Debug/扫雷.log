@@ -1,2 +1,5 @@
-﻿  game.c
+﻿  test.c
+C:\Users\nafla\Desktop\college\college\code\大一上\扫雷\test.c(4,8): warning C4047: “初始化”:“char **”与“int”的间接级别不同
+C:\Users\nafla\Desktop\college\college\code\大一上\扫雷\test.c(5,8): warning C4047: “初始化”:“char **”与“int”的间接级别不同
+C:\Users\nafla\Desktop\college\college\code\大一上\扫雷\test.c(173): warning C4715: “get_mine_count”: 不是所有的控件路径都返回值
   扫雷.vcxproj -> C:\Users\nafla\Desktop\college\college\code\大一上\x64\Debug\扫雷.exe
