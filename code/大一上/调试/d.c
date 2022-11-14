@@ -609,3 +609,21 @@
 //	print(arr);
 //	return 0;
 //}
+//int main()
+//{
+//	int a = 10;
+//	int* p = &a;
+//	printf("%d", p);
+//	return 0;
+//}
+//int main()
+//{
+//	int a = 3,b = 5;
+//	printf("%d %d\n", a, b);
+//	a = a + b;
+//	b = a - b;
+//	a = a - b;
+//	printf("%d %d", a, b);
+//
+//	return 0;
+//}
