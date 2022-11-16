@@ -14,6 +14,7 @@ void disp(char board[ROW][COL])
 {
 	for (int i = 0; i < ROW; i++)
 	{
+
 		if (i == 0)
 		{
 			for (int m = 0; m < ROW; m++)

@@ -2,6 +2,8 @@
 #include<stdio.h>
 #include<math.h>
 #include<string.h>
+#include<stdlib.h>
+
 
 //int main()
 //{
@@ -627,3 +629,14 @@
 //
 //	return 0;
 //}
+int main()
+{
+	/*int* a = (int*)malloc(4 * sizeof(int));
+	printf("%d", sizeof(a));
+	realloc(a, 3* sizeof(int));
+	printf("%d", sizeof(a));*/
+	int a = strlen("abcd");
+	printf("%d", a);
+
+	return 0;
+}
