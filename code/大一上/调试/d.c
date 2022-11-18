@@ -629,14 +629,64 @@
 //
 //	return 0;
 //}
+//int main()
+//{
+//	/*int* a = (int*)malloc(4 * sizeof(int));
+//	printf("%d", sizeof(a));
+//	realloc(a, 3* sizeof(int));
+//	printf("%d", sizeof(a));*/
+//	int a = strlen("abcd");
+//	printf("%d", a);
+//
+//	return 0;
+//}
+//void jiou(int a)
+//{
+//	if (a > 9) 
+//		jiou(a / 10);
+//	if((a%10)%2==0)
+//		printf("0");
+//	else
+//		printf("1");
+//
+//}
+//int main()
+//{
+//	int a;
+//	scanf("%d", &a);
+//	jiou(a);
+//	return 0;
+//}
+//int main()
+//{
+//	int a,b=1,c=0;
+// 	scanf("%d", &a);
+//	while (a != 0)
+//	{
+//		if ((a % 10) % 2 != 0)
+//			c += b;
+//		a /= 10;
+//		b *= 10;
+//	}
+//	printf("%d", c);
+//	return 0;
+//}
 int main()
 {
-	/*int* a = (int*)malloc(4 * sizeof(int));
-	printf("%d", sizeof(a));
-	realloc(a, 3* sizeof(int));
-	printf("%d", sizeof(a));*/
-	int a = strlen("abcd");
-	printf("%d", a);
-
+	char arrr[100] = { 0 };
+	scanf("%s", arrr);
+	char* arr = arrr;
+	int c = 0, h = 0, chn = 0;
+	while (*arr)
+	{
+		if (*arr == 'C')
+			c++;
+		if (*arr == 'H')
+			h += c;
+		if (*arr == 'N')
+			chn += h;
+		*arr++;
+	}
+	printf("%lld", chn);
 	return 0;
 }

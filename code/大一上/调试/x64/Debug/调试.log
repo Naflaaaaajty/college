@@ -1,3 +1,1 @@
-﻿  d.c
-C:\Users\nafla\Desktop\college\college\code\大一上\调试\d.c(638,10): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-  调试.vcxproj -> C:\Users\nafla\Desktop\college\college\code\大一上\x64\Debug\调试.exe
+﻿  调试.vcxproj -> C:\Users\nafla\Desktop\college\college\code\大一上\x64\Debug\调试.exe
