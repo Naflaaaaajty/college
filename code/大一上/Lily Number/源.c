@@ -7,7 +7,7 @@
 int main()
 {
 	long a=1000;
-	for (a = 1000; a < 10000; a++)
+	for (a = 1; a < 100000; a++)
 	{
 		long b, c, d, e;
 		b = (a / f) * (a % f);
