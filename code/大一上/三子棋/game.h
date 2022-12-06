@@ -2,8 +2,8 @@
 #include<windows.h>
 #include<time.h>
 #pragma once
-#define ROW 3
-#define	COL 3
+#define ROW 20
+#define	COL 20s
 void game();
 void menu();
 void disp(char board[ROW][COL]);

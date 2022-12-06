@@ -25,13 +25,10 @@ int main()
 	int a;
 	scanf("%d", &a);
 	for (int i = 0; i < a; i++)
-	{
 		scanf("%d", &arr[i]);
-	}
 	getchar();
 	scanf("%d", &arr[a]);
-	int sz = sizeof(arr) / sizeof(arr[0]) - 1;
-	bubble(arr, sz);
+	bubble(arr, a);
 	for (int i = a + 1; i > 0; i--)
 	{
 		printf("%d ", arr[20 - i]);

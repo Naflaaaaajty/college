@@ -10,13 +10,9 @@ int main()
 	{
 		mid = (zuo + you) / 2;
 		if (arr[mid] > a)
-		{
 			you = mid - 1;
-		}
 		else if (arr[mid] < a)
-		{
 			zuo = mid + 1;
-		}
 		else
 			break;
 	}
