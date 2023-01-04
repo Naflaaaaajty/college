@@ -1,7 +1,9 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
+int count = 0;
 int fbn(int c)
 {
+	count++;
 	int a = 1;
 	if (c>=2)
 	{
@@ -16,7 +18,7 @@ int main()
 	int b = 0;
 	scanf("%d", &a);
 	b = fbn(a);
-	printf("%d", b);
+	printf("%d %d", b,count);
 	system("pause");
 	return 0;
 }

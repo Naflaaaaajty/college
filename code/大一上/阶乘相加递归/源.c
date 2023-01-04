@@ -1,7 +1,9 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
+int count = 0;
 int dgxj(int c)
 {
+	count++;
 	if (c == 1)
 		return 1;
 	else
@@ -17,7 +19,7 @@ int main()
 	{
 		b += dgxj(i);
 	}
-	printf("%d", b);
+	printf("%d %d", b,count);
 	system("pause");
 	return 0;
 }

@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+ï»¿#define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<math.h>
 #include<string.h>
@@ -280,19 +280,19 @@
 //int main()
 //{
 //    int n = 0;
-//    //¶à×éÊäÈë
+//    //å¤šç»„è¾“å…¥
 //    while (~scanf(" %d", &n))
 //    {
-//        //¿ØÖÆÐÐÊý
+//        //æŽ§åˆ¶è¡Œæ•°
 //        for (int i = 0; i < n; i++)
 //        {
-//            //´òÓ¡Ò»ÐÐ
-//            //´òÓ¡¿Õ¸ñ
+//            //æ‰“å°ä¸€è¡Œ
+//            //æ‰“å°ç©ºæ ¼
 //            for (int j = 0; j < n - 1 - i; j++)
 //            {
 //                printf(" ");
 //            }
-//            //´òÓ¡*¿Õ¸ñ
+//            //æ‰“å°*ç©ºæ ¼
 //            for (int k = 0; k <= i; k++)
 //            {
 //                printf("* ");
@@ -671,22 +671,50 @@
 //	printf("%d", c);
 //	return 0;
 //}
+//int main()
+//{
+//	char arrr[100] = { 0 };
+//	scanf("%s", arrr);
+//	char* arr = arrr;
+//	int c = 0, h = 0, chn = 0;
+//	while (*arr)
+//	{
+//		if (*arr == 'C')
+//			c++;
+//		if (*arr == 'H')
+//			h += c;
+//		if (*arr == 'N')
+//			chn += h;
+//		*arr++;
+//	}
+//	printf("%lld", chn);
+//	return 0;
+//}
+//#define N 2
+//#define M N + 1
+//#define NUM (M + 1) * M / 2
+//int main()
+//{
+//	printf("%d\n", NUM); 
+//	return 0;
+//}
+//int f(int n)
+//{
+//	static int i = 1;
+//	if (n >= 5)
+//		return n;
+//	n = n + i;
+//	i++;
+//	return f(n);
+//}
+//int main()
+//{
+//	printf("%d", f(1));
+//	return 0;
+//}
+#define n 100;
 int main()
 {
-	char arrr[100] = { 0 };
-	scanf("%s", arrr);
-	char* arr = arrr;
-	int c = 0, h = 0, chn = 0;
-	while (*arr)
-	{
-		if (*arr == 'C')
-			c++;
-		if (*arr == 'H')
-			h += c;
-		if (*arr == 'N')
-			chn += h;
-		*arr++;
-	}
-	printf("%lld", chn);
+	int arr[n][n] = { 0 };
 	return 0;
 }
