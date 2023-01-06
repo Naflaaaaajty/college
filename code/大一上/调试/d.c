@@ -712,9 +712,30 @@
 //	printf("%d", f(1));
 //	return 0;
 //}
-#define n 100;
+//#define n 100;
+//int main()
+//{
+//	int arr[n][n] = { 0 };
+//	return 0;
+
+//int main()
+//{
+//	unsigned char a = 200;
+//	unsigned char b = 100;
+//	unsigned char c = 0;
+//	c = a + b;
+//	printf("%d %d", a + b, c);
+//	return 0;
+//}
+//int main()
+//{
+//	const char* p = "abcdef";
+//	printf("%s", p);
+//	return 0;
+//}
 int main()
 {
-	int arr[n][n] = { 0 };
+	char arr[4] = { 'a','c' };
+	printf("%c", arr[1]);
 	return 0;
 }

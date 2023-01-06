@@ -183,6 +183,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "作业3", "作业3\作业3.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "计算日期到天数转换", "计算日期到天数转换\计算日期到天数转换.vcxproj", "{93B2DFF2-4C67-4C3A-B9D4-8DA302F21709}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "函数指针", "函数指针\函数指针.vcxproj", "{1F0B20CA-A3B8-4C8C-B9FB-0BF29BCB8A2B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -911,6 +913,14 @@ Global
 		{93B2DFF2-4C67-4C3A-B9D4-8DA302F21709}.Release|x64.Build.0 = Release|x64
 		{93B2DFF2-4C67-4C3A-B9D4-8DA302F21709}.Release|x86.ActiveCfg = Release|Win32
 		{93B2DFF2-4C67-4C3A-B9D4-8DA302F21709}.Release|x86.Build.0 = Release|Win32
+		{1F0B20CA-A3B8-4C8C-B9FB-0BF29BCB8A2B}.Debug|x64.ActiveCfg = Debug|x64
+		{1F0B20CA-A3B8-4C8C-B9FB-0BF29BCB8A2B}.Debug|x64.Build.0 = Debug|x64
+		{1F0B20CA-A3B8-4C8C-B9FB-0BF29BCB8A2B}.Debug|x86.ActiveCfg = Debug|Win32
+		{1F0B20CA-A3B8-4C8C-B9FB-0BF29BCB8A2B}.Debug|x86.Build.0 = Debug|Win32
+		{1F0B20CA-A3B8-4C8C-B9FB-0BF29BCB8A2B}.Release|x64.ActiveCfg = Release|x64
+		{1F0B20CA-A3B8-4C8C-B9FB-0BF29BCB8A2B}.Release|x64.Build.0 = Release|x64
+		{1F0B20CA-A3B8-4C8C-B9FB-0BF29BCB8A2B}.Release|x86.ActiveCfg = Release|Win32
+		{1F0B20CA-A3B8-4C8C-B9FB-0BF29BCB8A2B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
