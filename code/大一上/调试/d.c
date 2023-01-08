@@ -4,6 +4,7 @@
 #include<string.h>
 #include<stdlib.h>
 
+#include <stdlib.h>
 
 //int main()
 //{
@@ -733,9 +734,38 @@
 //	printf("%s", p);
 //	return 0;
 //}
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include <string.h>
+//
+//int main()
+//{
+//    int size;
+//    char* str;
+//
+//    printf("Enter the size of the string: ");
+//    scanf("%d", &size);
+//
+//    // 动态分配一个大小为size的char数组
+//    str = (char*)malloc(size * sizeof(char));
+//
+//    printf("Enter a string: ");
+//    // 使用fgets函数读取用户输入的字符串，并将其存储在动态分配的数组中
+//    fgets(str, size, stdin);
+//
+//    printf("You entered: %s\n", str); // 输出字符串
+//
+//    // 释放动态分配的内存
+//    free(str);
+//
+//    return 0;
+//}
+
 int main()
 {
-	char arr[4] = { 'a','c' };
-	printf("%c", arr[1]);
+	int a[5] = { 5, 4, 3, 2, 1 };
+	int* ptr = (int*)(&a + 1);
+	printf("%d,%d", *(a + 1), *(ptr - 1));
 	return 0;
 }
+
