@@ -1,0 +1,4 @@
+﻿  d.c
+C:\Users\nafla\Desktop\college\college\code\大一上\调试\d.c(788,9): warning C4477: “printf”: 格式字符串“%x”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“int *”
+C:\Users\nafla\Desktop\college\college\code\大一上\调试\d.c(787,16): warning C4047: “初始化”:“int *”与“int”的间接级别不同
+  调试.vcxproj -> C:\Users\nafla\Desktop\college\college\code\大一上\Debug\调试.exe

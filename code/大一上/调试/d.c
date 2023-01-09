@@ -761,11 +761,30 @@
 //    return 0;
 //}
 
+//int main()
+//{
+//	int a[5] = { 5, 4, 3, 2, 1 };
+//	int* ptr = (int*)(&a + 1);
+//	printf("%d,%d", *(a + 1), *(ptr - 1));
+//	return 0;
+//}
+//int main()
+//{
+//	char arr[] = { 'a','b' };
+//	printf("%d", strlen(&arr + 1));
+//	return 0;
+//}
 int main()
 {
-	int a[5] = { 5, 4, 3, 2, 1 };
-	int* ptr = (int*)(&a + 1);
-	printf("%d,%d", *(a + 1), *(ptr - 1));
+	char a = -126;
+	printf("%c\n", a);
+	printf("%u", a);
+
 	return 0;
 }
-
+//int main()
+//{
+//	int a = 10, * pa = 0x1000;
+//	printf("%d,%x", a, pa);
+//	return 0;
+//  }
