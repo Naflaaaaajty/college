@@ -1,2 +1,5 @@
 ﻿  d.c
+C:\Users\nafla\Desktop\college\college\code\大一上\调试\d.c(833,12): warning C4473: “printf”: 没有为格式字符串传递足够的参数
+C:\Users\nafla\Desktop\college\college\code\大一上\调试\d.c(833,12): message : 占位符和其参数预计 4 可变参数，但提供的却是 2 参数
+C:\Users\nafla\Desktop\college\college\code\大一上\调试\d.c(833,12): message : 缺失的可变参数 3 为格式字符串“%d”所需
   调试.vcxproj -> C:\Users\nafla\Desktop\college\college\code\大一上\x64\Debug\调试.exe

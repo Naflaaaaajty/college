@@ -1,0 +1,4 @@
+﻿  contact.c
+C:\Users\nafla\Desktop\college\college\code\大一上\通讯录\contact.h(6,1): warning C4005: “max”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(193,1): message : 参见“max”的前一个定义
+  通讯录.vcxproj -> C:\Users\nafla\Desktop\college\college\code\大一上\x64\Debug\通讯录.exe

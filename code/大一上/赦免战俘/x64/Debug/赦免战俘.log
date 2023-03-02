@@ -1,0 +1,10 @@
+﻿  源.c
+C:\Users\nafla\Desktop\college\college\code\大一上\赦免战俘\源.c(11,11): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+C:\Users\nafla\Desktop\college\college\code\大一上\赦免战俘\源.c(26,37): warning C4047: “=”:“int **”与“int *”的间接级别不同
+C:\Users\nafla\Desktop\college\college\code\大一上\赦免战俘\源.c(28,38): warning C4311: “类型强制转换”: 从“void *”到“int”的指针截断
+C:\Users\nafla\Desktop\college\college\code\大一上\赦免战俘\源.c(28,38): warning C4047: “=”:“int *”与“int”的间接级别不同
+C:\Users\nafla\Desktop\college\college\code\大一上\赦免战俘\源.c(32,11): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+C:\Users\nafla\Desktop\college\college\code\大一上\赦免战俘\源.c(40,2): warning C4013: “system”未定义；假设外部返回 int
+C:\Users\nafla\Desktop\college\college\code\大一上\赦免战俘\源.c(25,10): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\nafla\Desktop\college\college\code\大一上\赦免战俘\源.c(19): warning C4716: “zero”: 必须返回一个值
+C:\Users\nafla\Desktop\college\college\code\大一上\赦免战俘\源.c(27): error C4700: 使用了未初始化的局部变量“i”

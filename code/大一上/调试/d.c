@@ -774,17 +774,62 @@
 //	printf("%d", strlen(&arr + 1));
 //	return 0;
 //}
-int main()
-{
-	char a = -126;
-	printf("%c\n", a);
-	printf("%u", a);
-
-	return 0;
-}
 //int main()
 //{
-//	int a = 10, * pa = 0x1000;
-//	printf("%d,%x", a, pa);
+//	char b = -126;
+//	printf("%c\n", b);
+//	printf("%u", b);
+//
 //	return 0;
-//  }
+//}
+//int main()
+////{
+////	int a = 10, * pa = 0x1000;
+////	printf("%d,%x", a, pa);
+////	return 0;
+////  }
+//int main()
+//{
+//	char* c[] = { "ENTER","NEW","POINT","FIRST" };
+//	char** cp[] = { c + 3,c + 2,c + 1,c };
+//	char*** cpp = cp;
+//	printf("%s\n", **++cpp);
+//	printf("%s\n", *-- * ++cpp + 3);
+//	printf("%s\n", *cpp[-2] + 3);
+//	printf("%s\n", cpp[-1][-1] + 1);
+//	return 0;
+//}
+//int main()
+//{
+//	char c;
+//	scanf("%c", &c);
+//	printf("%c", c - 32);
+//	return  0;
+//}
+//void print(int x)
+//{
+//    printf("%d", x % 10);
+//    if (x > 9)
+//        print(x / 10);
+//
+//}
+//int main()
+//{
+//    int a,b;
+//    scanf("%d.%d", &a, &b);
+//    print(b);
+//    printf(".");
+//    print(a);
+//    return 0;
+//}
+int main()
+{
+    int a, b, c, d, e;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    if (b > d)
+        e = 60 - b + d;
+    else
+        e = d - b;
+    printf("%d %d %d %d", c - a - 1, e);
+    return 0;
+}
