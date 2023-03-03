@@ -22,12 +22,13 @@ int main()
 			serchrtxl(&txl);
 			break;
 		case 4:
+			modifytxl(&txl);
 			break;
 		case 5:
 			show(&txl);
 			break;
 		case 6:
-			//txlsort(&txl);
+			txlsort(&txl);
 			break;
 		case 0:
 			break;
