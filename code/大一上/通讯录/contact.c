@@ -11,11 +11,19 @@ void menu()
 void InitContact(con* txl) {
 	assert(txl);
 	txl->count = 0;
-	memset(txl->arr, 0, sizeof(txl->arr));
+	con* ptr = (con*)calloc(max, sizeof(con));
+	if (ptr == NULL)
+	{
+		printf("InitContact;;calloc");
+		return;
+	}
+	txl->arr = ptr;
+	txl->count_max = max;
 }
 void addcontact(con* txl)
 {
 	assert(txl);
+	check_txl(txl);
 	printf("请输入联系人姓名>\n");
 	scanf("%s", txl->arr[txl->count].name);
 	printf("请输入联系人年龄>\n");
@@ -29,6 +37,11 @@ void addcontact(con* txl)
 	(txl->count)++;
 	printf("添加成功");
 	Sleep(1000);
+}
+void check_txl(con* txl)
+{
+	if (txl->count < txl->count_max)
+		return;
 
 }
 void show(con* txl)
@@ -53,8 +66,6 @@ void show(con* txl)
 		else
 			printf("输入错误请重新输入");
 	}
-	
-
 }
 int serch(const con* txl,char name[])
 {
@@ -102,8 +113,7 @@ void deltxl(con* txl)
 	{
 		printf("查无此人\n");
 		return;
-	}
-		
+	}	
 	int i= serch(txl, name);
 	txl->arr[i] = txl->arr[txl->count-1];
 	txl->count--;
@@ -129,7 +139,6 @@ void modifytxl(con* txl)
 	scanf("%s", txl->arr[i].adder);
 	printf("修改成功");
 	Sleep(1000);
-
 }
 void txlsort(const con* txl)
 {

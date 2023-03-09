@@ -1,4 +1,14 @@
 #include"contact.h"
+enum contact_name 
+{
+	EXIT,
+	ADD,
+	DEL,
+	SERCH,
+	MODIFY,
+	SHOW,
+	SORT
+}; 
 int main()
 {
 	int input = 0;
@@ -12,25 +22,25 @@ int main()
 		scanf("%d", &input);
 		switch (input)
 		{
-		case 1:
+		case ADD:
 			addcontact(&txl);
 			break;
-		case 2:
+		case DEL:
 			deltxl(&txl);
 			break;
-		case 3:
+		case SERCH:
 			serchrtxl(&txl);
 			break;
-		case 4:
+		case MODIFY:
 			modifytxl(&txl);
 			break;
-		case 5:
+		case SHOW:
 			show(&txl);
 			break;
-		case 6:
+		case SORT:
 			txlsort(&txl);
 			break;
-		case 0:
+		case EXIT:
 			break;
 		default:
 			printf(" ‰»Î¥ÌŒÛ");

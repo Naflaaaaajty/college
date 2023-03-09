@@ -1,63 +1,10 @@
 ﻿  game.c
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.h(9,27): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.h(10,30): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.h(11,27): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.h(12,29): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.h(13,29): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.h(14,26): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.h(15,25): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.h(16,28): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.h(17,28): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.h(18,28): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(3,30): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(7,23): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(13,27): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(24,23): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(27,13): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(36,27): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(38,21): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(51,22): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(75,12): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(86,12): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(116,29): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(132,29): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(136,28): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(141,29): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(155,26): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(158,18): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(172,17): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(186,25): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(192,19): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(197,12): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(208,19): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(213,12): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(221,28): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(224,18): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(228,12): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(235,17): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(239,12): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(246,28): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(248,14): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(249,15): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(249,26): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(253,12): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(259,16): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(260,18): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(260,31): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(264,12): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(271,28): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(273,22): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(275,23): error C2059: 语法错误:“数字上的错误后缀”
   源.c
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.h(9,27): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.h(10,30): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.h(11,27): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.h(12,29): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.h(13,29): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.h(14,26): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.h(15,25): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.h(16,28): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.h(17,28): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.h(18,28): error C2059: 语法错误:“数字上的错误后缀”
-C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\源.c(34,18): error C2059: 语法错误:“数字上的错误后缀”
   正在生成代码...
+C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(131): warning C4715: “boardif”: 不是所有的控件路径都返回值
+C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(220): warning C4715: “shu”: 不是所有的控件路径都返回值
+C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(185): warning C4715: “heng”: 不是所有的控件路径都返回值
+C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(245): warning C4715: “youxie”: 不是所有的控件路径都返回值
+C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(270): warning C4715: “zuoxie”: 不是所有的控件路径都返回值
+C:\Users\nafla\Desktop\college\college\code\大一上\三子棋\game.c(283): warning C4715: “reopen”: 不是所有的控件路径都返回值
+  三子棋.vcxproj -> C:\Users\nafla\Desktop\college\college\code\大一上\x64\Debug\三子棋.exe

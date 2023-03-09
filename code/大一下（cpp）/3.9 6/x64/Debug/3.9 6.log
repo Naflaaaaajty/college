@@ -1,0 +1,6 @@
+﻿  源.cpp
+C:\Users\nafla\Desktop\college\college\code\大一下（cpp）\3.9 6\源.cpp(21,10): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\nafla\Desktop\college\college\code\大一下（cpp）\3.9 6\源.cpp(21,24): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\nafla\Desktop\college\college\code\大一下（cpp）\3.9 6\源.cpp(26,15): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+C:\Users\nafla\Desktop\college\college\code\大一下（cpp）\3.9 6\源.cpp(33,15): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  3.9 6.vcxproj -> C:\Users\nafla\Desktop\college\college\code\大一下（cpp）\x64\Debug\3.9 6.exe

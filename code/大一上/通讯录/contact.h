@@ -3,15 +3,13 @@
 #include<string.h>
 #include<windows.h>
 #include<assert.h>
-#define max	100
+#include<stdlib.h>
+
+#define max	3
 #define name_max 20
 #define tel_max	12
 #define adder_max 100
 #define sex_max	20
-
-
-
-
 void menu();
 typedef struct contact {
 	char name[name_max];
@@ -22,9 +20,9 @@ typedef struct contact {
 
 }contact;
 typedef struct con {
-	contact arr[max];
+	contact* arr;
 	int count;
-
+	int count_max;
 }con;
 void InitContact(con* txl);
 void addcontact(con* txl);
