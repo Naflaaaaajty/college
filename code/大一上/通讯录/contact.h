@@ -4,8 +4,7 @@
 #include<windows.h>
 #include<assert.h>
 #include<stdlib.h>
-
-#define max	3
+#define max	2
 #define name_max 20
 #define tel_max	12
 #define adder_max 100
@@ -35,6 +34,10 @@ void modifytxl(con* txl);
 void txlsort(const con* txl);
 int txl_cmp_name(const void* e1, const void* e2);
 int txl_cmp_age(const void* e1, const void* e2);
+void check_txl(con* txl);
+void loadcontact(con* txl);
+void destroy(con* txl);
+void savecontact(con *txl);
 
 
 

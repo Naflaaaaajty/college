@@ -41,6 +41,9 @@ int main()
 			txlsort(&txl);
 			break;
 		case EXIT:
+			savecontact(&txl);
+
+			destroy(&txl);
 			break;
 		default:
 			printf("ÊäÈë´íÎó");

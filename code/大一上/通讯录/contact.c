@@ -11,7 +11,7 @@ void menu()
 void InitContact(con* txl) {
 	assert(txl);
 	txl->count = 0;
-	con* ptr = (con*)calloc(max, sizeof(con));
+	con* ptr = (con*)calloc(max, sizeof(contact));
 	if (ptr == NULL)
 	{
 		printf("InitContact;;calloc");
@@ -19,6 +19,22 @@ void InitContact(con* txl) {
 	}
 	txl->arr = ptr;
 	txl->count_max = max;
+	loadcontact(txl);
+}
+void check_txl(con* txl)
+{
+	if (txl->count == txl->count_max)
+	{
+		con* pa = (con*)realloc(txl->arr,( txl->count_max+max) * sizeof(contact));
+		if (NULL == pa)
+		{
+			printf("realloc::pa");
+			return;
+		}
+		txl->arr = pa;
+		txl->count_max += max;
+		//printf("bingo");
+	}
 }
 void addcontact(con* txl)
 {
@@ -37,12 +53,6 @@ void addcontact(con* txl)
 	(txl->count)++;
 	printf("添加成功");
 	Sleep(1000);
-}
-void check_txl(con* txl)
-{
-	if (txl->count < txl->count_max)
-		return;
-
 }
 void show(con* txl)
 {
@@ -166,9 +176,57 @@ int txl_cmp_age(const void* e1, const void* e2)
 {
 	return *(int*)e1 - *(int*)e2;
 }
-
 int txl_cmp_name(const void* e1, const void* e2)
 {
 	return *(char*)e1 - *(char*)e2;
 }
+void loadcontact(con* txl)
+{
+	FILE* pf = fopen("contact.txt", "rb");
+	if (NULL == pf)
+	{
+		perror("fopen");
+		return;
+	}
+	contact tmp = { 0 };
+	int i = 0;
+	while (fread(&tmp, sizeof(contact), 1, pf))
+	{
+		check_txl(txl);
+		txl->arr[i] = tmp;
+		txl->count++;
+		i++;
+	} 
+	fclose(pf);
+	pf = NULL;
+	
+}
+void destroy(con* txl)
+{
+	free(txl->arr);
+	txl->arr = NULL;
+	txl->count = 0;
+	txl->count_max = 0;
+	txl = NULL;
+
+}
+void savecontact(con* txl)
+{
+	FILE* pf = fopen("contact.txt", "wb");
+	if (NULL == pf)
+	{
+		perror("fopen");
+		return;
+	}
+	contact tmp = { 0 };
+	int i = 0;
+	for (i = 0; i < txl->count; i++)
+	{
+		fwrite(txl->arr + i, sizeof(contact), 1, pf);
+	}
+	fclose(pf);
+	pf = NULL;
+	printf("\n保存成功");
+}
+
 
