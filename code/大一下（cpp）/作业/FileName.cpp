@@ -2,24 +2,42 @@
 using namespace std;
 int main()
 {
-	int N, b, sum, n;
-	cin >> N;
-	n = N;
-	if (n < 0)
-		n = -n;
-	if (n % 10 == 0)
-		n /= 10;
-	sum = 0;
-	while (n >= 1)
-	{
-		b = n % 10;
-		sum = sum * 10 + b;
-		n /= 10;
-	}
-	if (N < 0)
-	{
-		sum = -sum;
-	}
-	cout << sum;
-	return 0;
+    int k,arr[100]={0},count=0;
+    string ch;
+    cin >> k;
+    for(int i=0;i<k;i++)
+    {
+        cin>>arr[i];
+    }
+    int j=0;
+    while (1)
+    {
+        cin >> ch;
+        if(ch[0]=='E')
+            break;
+        
+        if (count==arr[j]+1)
+        {
+            if (ch[0] == 'C')
+                printf("JianDao\n");
+            else if (ch[0] == 'J')
+                printf("Bu\n");
+            else if (ch[0] == 'B')
+                printf("ChuiZi\n");
+            if(arr[j+1]!=0)
+            j++;
+            else
+                j=0;
+            count=0;
+            continue;
+        }
+        if (ch[0] == 'C')
+            printf("Bu\n");
+        else if (ch[0] == 'J')
+            printf("ChuiZi\n");
+        else if (ch[0] == 'B')
+            printf("JianDao\n");
+        count++;
+    }
+    return 0;
 }

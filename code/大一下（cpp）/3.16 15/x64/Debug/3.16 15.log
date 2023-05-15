@@ -1,0 +1,5 @@
+﻿  源.cpp
+C:\Users\nafla\Desktop\college\college\code\大一下（cpp）\3.16 15\源.cpp(6,23): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\nafla\Desktop\college\college\code\大一下（cpp）\3.16 15\源.cpp(29,23): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\nafla\Desktop\college\college\code\大一下（cpp）\3.16 15\源.cpp(30,23): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  3.16 15.vcxproj -> C:\Users\nafla\Desktop\college\college\code\大一下（cpp）\x64\Debug\3.16 15(kmp算法).exe

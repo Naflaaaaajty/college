@@ -1,0 +1,11 @@
+﻿  student.c
+C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(33,3): warning C4013: “Sleep”未定义；假设外部返回 int
+C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(90,24): warning C4020: “searchlist”: 实参太多
+C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(103,1): warning C4029: 声明的形参表不同于定义
+C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(185,35): warning C4028: 形参 2 与声明不同
+  正在生成代码
+  5 of 21 functions (23.8%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  学生信息系统.vcxproj -> C:\Users\nafla\Desktop\college\college\code\大一上\x64\Release\学生信息系统.exe

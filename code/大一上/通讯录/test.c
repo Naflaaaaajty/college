@@ -16,7 +16,6 @@ int main()
 	InitContact(&txl);
 	do
 	{
-
 		system("cls");
 		menu();
 		scanf("%d", &input);
@@ -42,14 +41,12 @@ int main()
 			break;
 		case EXIT:
 			savecontact(&txl);
-
 			destroy(&txl);
 			break;
 		default:
 			printf("ÊäÈë´íÎó");
 			break;
 		}
-
 	} while (input);
 	system("pause");
 	return 0;

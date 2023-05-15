@@ -1,0 +1,7 @@
+﻿  圣诞树.c
+C:\Users\nafla\Desktop\college\college\code\大一上\Project1qw\圣诞树.c(20,2): warning C4013: “system”未定义；假设外部返回 int
+  正在生成代码
+  Previous IPDB not found, fall back to full compilation.
+  All 7 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  Project1qw.vcxproj -> C:\Users\nafla\Desktop\college\college\code\大一上\x64\Release\圣诞树.exe

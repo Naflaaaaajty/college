@@ -1,0 +1,36 @@
+﻿  菜单人机交互的设计.c
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(17,1): warning C4005: “NULL”: 宏重定义
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\vcruntime.h(235,1): message : 参见“NULL”的前一个定义
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(38,31): warning C4031: 第二个形参表比第一个长
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(51,22): warning C4047: “函数”:“con *”与“con **”的间接级别不同
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(51,17): warning C4024: “sacnfstudent”: 形参和实参 1 的类型不同
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(51,29): warning C4047: “函数”:“con *”与“con **”的间接级别不同
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(51,23): warning C4024: “sacnfstudent”: 形参和实参 2 的类型不同
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(54,16): warning C4047: “函数”:“con *”与“con **”的间接级别不同
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(54,11): warning C4024: “Delete”: 形参和实参 1 的类型不同
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(43,12): warning C4101: “m”: 未引用的局部变量
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(92,25): warning C4028: 形参 1 与声明不同
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(92,36): warning C4028: 形参 2 与声明不同
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(112,53): warning C4047: “函数”:“con *”与“con **”的间接级别不同
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(112,49): warning C4024: “pjs”: 形参和实参 1 的类型不同
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(113,2): warning C4013: “Sleep”未定义；假设外部返回 int
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(130,55): warning C4047: “函数”:“con *”与“con **”的间接级别不同
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(130,50): warning C4024: “pjs”: 形参和实参 1 的类型不同
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(133,14): warning C4047: “函数”:“con *”与“con **”的间接级别不同
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(133,10): warning C4024: “insert”: 形参和实参 1 的类型不同
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(133,21): warning C4047: “函数”:“con *”与“con **”的间接级别不同
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(133,16): warning C4024: “insert”: 形参和实参 2 的类型不同
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(137,20): warning C4028: 形参 1 与声明不同
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(137,33): warning C4028: 形参 2 与声明不同
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(148,15): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(158,8): warning C4477: “scanf”: 格式字符串“%d”需要类型“int *”的参数，但可变参数 1 拥有了类型“char *”
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(158,8): message : 请考虑在格式字符串中使用“%hhd”
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(158,19): warning C4474: scanf: 格式字符串中传递的参数太多
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(158,19): message : 占位符和其参数预计 1 可变参数，但提供的却是 3 参数
+C:\Users\nafla\Documents\Tencent Files\1773239694\FileRecv\菜单人机交互的设计.c(173,7): warning C4090: “初始化”: 不同的“const”限定符
+  正在生成代码
+  3 of 14 functions (21.4%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  lin.vcxproj -> C:\Users\nafla\Desktop\college\college\code\大一上\x64\Release\lin.exe

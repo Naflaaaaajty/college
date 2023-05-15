@@ -822,14 +822,55 @@
 //    print(a);
 //    return 0;
 //}
+//int main()
+//{
+//    int a, b, c, d, e;
+//    scanf("%d %d %d %d", &a, &b, &c, &d);
+//    if (b > d)
+//        e = 60 - b + d;
+//    else
+//        e = d - b;
+//    printf("%d %d %d %d", c - a - 1, e);
+//    return 0;
+//}
 int main()
 {
-    int a, b, c, d, e;
-    scanf("%d %d %d %d", &a, &b, &c, &d);
-    if (b > d)
-        e = 60 - b + d;
-    else
-        e = d - b;
-    printf("%d %d %d %d", c - a - 1, e);
+    unsigned char puc[4];
+    struct tagPIM
+    {
+        unsigned char ucPim1;
+        unsigned char ucData0 : 1;
+        unsigned char ucData1 : 2;
+        unsigned char ucData2 : 3;
+    }*pstPimData;
+    pstPimData = (struct tagPIM*)puc;
+    memset(puc, 0, 4);
+    pstPimData->ucPim1 = 2;
+    pstPimData->ucData0 = 3;
+    pstPimData->ucData1 = 4;
+    pstPimData->ucData2 = 5;
+    printf("%02x %02x %02x %02x\n", puc[0], puc[1], puc[2], puc[3]);
     return 0;
+}
+int a[510];   //存储每次选出来的数据
+int book[510];   //标记是否被访问
+int ans = 0; //记录符合条件的次数
+
+void DFS(int cur) {
+	if (cur == k) { //k个数已经选完，可以进行输出等相关操作 
+		for (int i = 0; i < cur; i++) {
+			printf("%d ", a[i]);
+		}
+		ans++;
+		return;
+	}
+
+	for (int i = 0; i < n; i++) { //遍历 n个数，并从中选择k个数 
+		if (!book[i]) { //若没有被访问 
+			book[i] = 1; //标记已被访问 
+			a[cur] = i;  //选定本数，并加入数组 
+			DFS(cur + 1);  //递归，cur+1 
+			book[i] = 0;  //释放，标记为没被访问，方便下次引用 
+		}
+	}
 }
