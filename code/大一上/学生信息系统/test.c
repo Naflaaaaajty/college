@@ -1,7 +1,9 @@
 #include"student.h"
+extern int a;
 enum contact_name
 {
 	EXIT,
+	CREATCLASS,
 	ADD,
 	DEL,
 	SERCH,
@@ -11,8 +13,10 @@ enum contact_name
 };
 int main()
 {
+	password();
 	int input = 0;
-	slist* head=NULL;
+	LTNode* class=ListInit();
+	a=scanclass();
 	do
 	{
 		system("cls");
@@ -20,24 +24,27 @@ int main()
 		scanf("%d", &input);
 		switch (input)
 		{
+		case CREATCLASS:
+			creatclass(class);
+			initclass(class);
+			break;
 		case ADD:
-			add(&head);
+			stuadd(class);
 			break;
 		case DEL:
-			delslist(&head);
+			
 			break;
 		case SERCH:
 			
 			break;
 		case MODIFY:
-			mdflist(&head);
+			
 			break;
 		case SHOW:
-			showlist(&head);
+			
 			break;
 		case SORT:
-			listsort(&head);
-			break;
+			
 		case EXIT:
 			
 			break;
