@@ -117,11 +117,25 @@ void ListInsert(LTNode* pos, LTDataType x)
 //双向带头循环链表pos位置删除
 void ListErase(LTNode* pos)
 {
-	assert(pos);
+	if (!pos)
+		return;
+	LTNode* cur = pos->next;
+	while (1)
+	{
+		if (cur->size < -1010)
+			cur = cur->next;
+		else
+		{
+			cur->size--;
+			break;
+		}
+	}
 	LTNode* posPrev = pos->prev;
 	LTNode* posNext = pos->next;
 	posPrev->next = posNext;
 	posNext->prev = posPrev;
+	free(pos->Data);
+	pos->Data = NULL;
 	free(pos);
 	pos = NULL;
 }

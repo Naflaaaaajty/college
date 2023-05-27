@@ -10,6 +10,7 @@ void menu()
 	printf("*       5. 学生信息修改		    *\n");
 	printf("*       6. 学生信息显示		    *\n");
 	printf("*       7. 学生信息排序		    *\n");
+	printf("*       8. 重置学生信息管理系统	    *\n");
 	printf("*       0. 退出系统		    *\n");
 	printf("-------------------------------------\n");
 	printf("*  作者：贾天元 学号:2022401760219  *\n");
@@ -17,9 +18,7 @@ void menu()
 }
 void password(void)
 {
-
 	char pass_[200] = {0};
-	
 	int count = 3;
 	if (pass->flag)
 	{
@@ -34,7 +33,6 @@ void password(void)
 		scanf("%s", pass_);
 		while (--count)
 		{
-
 			if (!strcmp(pass_, pass->pass))
 			{
 				printf("密码正确\n");
@@ -46,15 +44,12 @@ void password(void)
 				printf("你还有%d次机会\n", count);
 				printf("请输入密码：\n");
 				scanf("%s", pass_);
-
 			}
 		}
 		assert(count);
 	}
 
 }
-
-
 void creatclass(LTNode* class)
 {
 	if (pass->a < 0)
@@ -81,7 +76,7 @@ void creatclass(LTNode* class)
 	}
 	else
 	{again:
-		printf("请输入你要扩建到多少个班级(已有%d个班级)\n",pass->a);
+		printf("请输入你要扩建到多少个班级(已有%d个班级)：",pass->a);
 		scanf("%d", &pass->a);
 		if (pass->a<class->size)
 		{
@@ -101,7 +96,6 @@ void creatclass(LTNode* class)
 			initclass(cur);
 		}
 	}
-
 }
 void initclass(LTNode* head)
 {
@@ -110,19 +104,36 @@ void initclass(LTNode* head)
 }
 void stuadd(LTNode* class)
 {
+again:;
 	int j,i=0;
+	if (!pass->a)
+	{
+		puts("无班级");
+		return;
+	}
 	printf("请选择你要管理那个班级，已有%d个班级", pass->a);
 	scanf("%d", &j);
+	if (j > pass->a)
+	{
+		printf("请输入合法数字\n");
+		goto again;
+	}
 	LTNode* head=manegeclass(class,j);
 	printf("请输入你要存入多少学生信息：");
 	scanf("%d", &i);
 	head->size += i;
 	while(i--)
 	ListPushBack(head, scanstu());
+	average(class);
 }
 stu* scanstu()
 {
 	stu* date = (stu*)malloc(sizeof(stu));
+	if (!date)
+	{
+		perror("scanstu failled");
+		return;
+	}
 	puts("--------------------------------------------------------------------");
 	printf("请输入名字:");
 	scanf("%s", date->name);
@@ -138,15 +149,6 @@ stu* scanstu()
 	scanf("%d", &date->english);
 	puts("--------------------------------------------------------------------\n");
 	return date;
-}
-void delstu(LTNode* class)
-{
-	int j;
-	printf("请选择你要管理那个班级，已有%d个班级:",pass->a);
-	scanf("%d", &j);
-	LTNode* head = manegeclass(class, j);
-	//showstu(head);
-	//serchstu(head);
 }
 LTNode* manegeclass(LTNode* class,int j)
 {
@@ -184,6 +186,12 @@ void showclass(LTNode* class)
 {
 again:;
 	int j;
+	if (!pass->a)
+	{
+		printf("无班级，请创建班级\n");
+		creatclass(class);
+		return;
+	}
 	printf("请选择你要查看哪个班级，已有%d个班级:", pass->a);
 	scanf("%d", &j);
 	if (j > pass->a)
@@ -193,6 +201,11 @@ again:;
 	}
 		
 	LTNode* head = manegeclass(class, j);
+	if (!head->size)
+	{
+		puts("班级内无学生");
+		return;
+	}
 	showstu(head);
 }
 void showstu(LTNode* head)
@@ -202,25 +215,26 @@ void showstu(LTNode* head)
 	while (cur != head)
 	{
 		printf("%d", count++);
-		printstu(cur->Data);
+		printstu(cur);
 		cur = cur->next;
 	}
 }
-void printstu(stu* Data)
+void printstu(LTNode* Data)
 {
 	assert(Data);
-	printf("----------------------------------------------------------------------------\n");
-	printf("|名字：%s | ", Data->name);
-	printf("性别：%s | ", Data->sex);
-	printf("学号：%s | ", Data->id);
-	printf("C语言成绩：%d | ", Data->cpp);
-	printf("数学成绩：%d | ", Data->math);
-	printf("英语成绩：%d |\n", Data->english);
-	printf("-----------------------------------------------------------------------------\n");;
+	printf("-------------------------------------------------------------------------------------\n");
+	printf("|名字：%s | ", Data->Data->name);
+	printf("性别：%s | ", Data->Data->sex);
+	printf("学号：%s | ", Data->Data->id);
+	printf("C语言成绩：%d | ", Data->Data->cpp);
+	printf("数学成绩：%d | ", Data->Data->math);
+	printf("英语成绩：%d | ", Data->Data->english);
+	printf("平均成绩：%d |\n", Data->Data->average);
+	printf("--------------------------------------------------------------------------------------\n");
 }
 void backmenu()
 {
-	puts("按任意键返回菜单");
+	puts("按回车键返回菜单");
 	scanf("%c");
 	getchar();
 }
@@ -281,22 +295,40 @@ void loadstu(LTNode* class)
 	}
 	fclose(pf);
 	pf = NULL;
+	average(class);
 }
-stu* search(LTNode* class)
+LTNode* search(LTNode* class)
 {
+again:;
 	assert(class);
 	int j,input;
 	stu* date;
+	if (!pass->a)
+	{
+		puts("无班级");
+		return;
+	}
 	printf("请选择你要管理那个班级，已有%d个班级:", pass->a);
 	scanf("%d", &j);
+	if (j > pass->a)
+	{
+		printf("请输入合法数字\n");
+		goto again;
+	}
 	LTNode* head = manegeclass(class, j);
+	if (!head->size)
+	{
+		puts("班级内无学生");
+		return;
+	}
 	stu* tmp = (stu*)malloc(sizeof(stu));
-again:;
-	printf("\n1）按照学号查找        2）按照姓名查找   ：");
+again_:;
+	showstu(head);
+	printf("\n1）按照学号        2）按照姓名     ：");
 	scanf("%d", &input);
 	if (1 == input)
 	{
-		printf("\n请输入你要查找的信息：");
+		printf("\n请输入信息：");
 		scanf("%s", tmp->id);
 		tmp->flag = true;
 		if (!searchstu(head, tmp))
@@ -306,12 +338,10 @@ again:;
 		}
 		printstu(searchstu(head, tmp));
 		date = searchstu(head, tmp);
-		free(tmp);
-		tmp = NULL;
 	}
 	else if (2 == input)
 	{
-		printf("\n请输入你要查找的信息：");
+		printf("\n请输入信息：");
 		scanf("%s", tmp->name);
 		tmp->flag = false;
 		if (!searchstu(head, tmp))
@@ -321,19 +351,19 @@ again:;
 		}
 		printstu(searchstu(head, tmp));
 		date = searchstu(head, tmp);
-		free(tmp);
-		tmp = NULL;
 	}
 	else
 	{
 		puts("请输入合法数字");
 		Sleep(1000);
 		system("cls");
-		goto again;
+		goto again_;
 	}
+	free(tmp);
+	tmp = NULL;
 	return date;
 }
-stu* searchstu(LTNode* class, stu* data)
+LTNode* searchstu(LTNode* class, stu* data)
 {
 	assert(class);
 	LTNode* cur = class->next;
@@ -343,7 +373,7 @@ stu* searchstu(LTNode* class, stu* data)
 		{
 			if (!strcmp(cur->Data->id,data->id))
 			{
-				return cur->Data;
+				return cur;
 			}
 			cur = cur->next;
 		}
@@ -353,9 +383,7 @@ stu* searchstu(LTNode* class, stu* data)
 		while (cur != class)
 		{
 			if (!strcmp(cur->Data->name, data->name))
-			{
-				return cur->Data;
-			}
+				return cur;
 			cur = cur->next;
 		}
 	}
@@ -364,23 +392,119 @@ stu* searchstu(LTNode* class, stu* data)
 void modfiy(LTNode* class)
 {
 	assert(class);
-	stu* date = search(class);
-	if (!date)
+	LTNode* stu = search(class);
+	if (!stu)
 		return;
 	puts("--------------------------------------------------------------------");
 	printf("请输入名字:");
-	scanf("%s", date->name);
+	scanf("%s", stu->Data->name);
 	printf("\n请输入性别:");
-	scanf("%s", date->sex);
+	scanf("%s", stu->Data->sex);
 	printf("\n请输入学号:");
-	scanf("%s", date->id);
+	scanf("%s", stu->Data->id);
 	printf("\n请输入数学成绩:");
-	scanf("%d", &date->math);
+	scanf("%d", &stu->Data->math);
 	printf("\n请输入C语言成绩:");
-	scanf("%d", &date->cpp);
+	scanf("%d", &stu->Data->cpp);
 	printf("\n请输入英语成绩:");
-	scanf("%d", &date->english);
+	scanf("%d", &stu->Data->english);
 	puts("--------------------------------------------------------------------\n");
+}
+void sortclass(LTNode* class)
+{
+again:;
+	int j;
+	if (!pass->a)
+	{
+		puts("无班级");
+		return;
+	}
+	printf("请选择你要排序哪个班级，已有%d个班级:", pass->a);
+	scanf("%d", &j);
+	if (j > pass->a)
+	{
+		printf("请输入合法数字\n");
+		goto again;
+	}
+	LTNode* head = manegeclass(class, j);
+	if (!head->size)
+	{
+		puts("班级内无学生");
+		return;
+	}
+	my_sort(head);
+	showstu(head);
+}
+void my_sort(LTNode* head)
+{
+	if (head == NULL || head->next == head)
+		return; // 链表为空或只有一个节点，无需排序
+	int swapped;
+	LTNode* current;
+	LTNode* tail = NULL;
+	do {
+		swapped = 0;
+		current = head->next;
+		while (current->next != head && current!=head) 
+		{
+			stu* data1 = current->Data;
+			stu* data2 = current->next->Data;
+
+			// 根据结构体数据包的字段进行比较
+			if (data1->average > data2->average) {
+				// 交换节点位置
+				LTNode* temp = current->next;
+				current->next = temp->next;
+				temp->next->prev = current;
+				temp->prev = current->prev;
+				current->prev->next = temp;
+				current->prev = temp;
+				temp->next = current;
+				swapped = 1;
+			}
+			current = current->next;
+		}
+		tail = current;
+	} while (swapped);
+}
+void average(LTNode* class)
+{
+	assert(class);
+	LTNode* cur = class->next;
+	while (cur != class)
+	{
+		LTNode* tail = cur->classs->next;
+		while (tail != cur->classs)
+		{
+			tail->Data->average = (tail->Data->cpp + tail->Data->english + tail->Data->math) / 3;
+			tail = tail->next;
+		}
+		cur = cur->next;
+	}
+}
+void delstu(LTNode* class)
+{
+	assert(class);
+	ListErase(search(class));
+}
+void destroyall(LTNode* class)
+{
+	LTNode* cur = class->next;
+	while (cur != class)
+	{
+		LTNode* tail = cur->classs->next;
+		while (tail!= cur->classs)
+		{
+			LTNode* tail_ = tail;
+			tail = tail->next;
+			ListErase(tail_);
+			
+		}
+		LTNode* cur_ = cur;
+		cur = cur->next;
+		ListErase(cur_);
+	}
+	pass->a = 0;
 }
 
 

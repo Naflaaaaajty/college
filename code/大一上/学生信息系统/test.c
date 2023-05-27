@@ -10,7 +10,8 @@ enum contact_name
 	SERCH,
 	MODIFY,
 	SHOW,
-	SORT
+	SORT,
+	ERASEALL
 };
 int main()
 {		
@@ -33,13 +34,12 @@ int main()
 			initclass(cur);
 			cur = cur->next;
 		}
-		
-		
 	}
 	if(pass->a)
 	loadstu(class);
 	do
 	{
+		average(class);
 		system("cls");
 		menu();
 		scanf("%d", &input);
@@ -56,6 +56,7 @@ int main()
 			break;
 		case DEL:
 			delstu(class);
+			savestu(class);
 			backmenu();
 			break;
 		case SERCH:
@@ -71,14 +72,18 @@ int main()
 			backmenu();
 			break;
 		case SORT:
-			
+			sortclass(class);
+			backmenu();
+			break;
+		case ERASEALL:
+			destroyall(class);
+			break;
 		case EXIT:
 			
 			break;
 		default:
 			printf(" ‰»Î¥ÌŒÛ");
 			break;
-		
 		}
 	} while (input);
 	system("pause");

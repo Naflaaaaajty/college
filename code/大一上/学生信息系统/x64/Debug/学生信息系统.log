@@ -1,10 +1,20 @@
 ﻿  student.c
-C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(76,18): warning C4047: “函数”:“LTNode **”与“LTNode *”的间接级别不同
-C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(76,15): warning C4024: “initclass”: 形参和实参 1 的类型不同
-C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(101,17): warning C4047: “函数”:“LTNode **”与“LTNode *”的间接级别不同
-C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(101,14): warning C4024: “initclass”: 形参和实参 1 的类型不同
-C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(106,24): warning C4028: 形参 1 与声明不同
-C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(224,8): warning C4473: “scanf”: 没有为格式字符串传递足够的参数
-C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(224,8): message : 占位符和其参数预计 1 可变参数，但提供的却是 0 参数
-C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(224,8): message : 缺失的可变参数 1 为格式字符串“%c”所需
+C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(71,18): warning C4047: “函数”:“LTNode **”与“LTNode *”的间接级别不同
+C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(71,15): warning C4024: “initclass”: 形参和实参 1 的类型不同
+C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(96,17): warning C4047: “函数”:“LTNode **”与“LTNode *”的间接级别不同
+C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(96,14): warning C4024: “initclass”: 形参和实参 1 的类型不同
+C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(100,24): warning C4028: 形参 1 与声明不同
+C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(135,3): warning C4033: “scanstu”必须返回值
+C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(218,12): warning C4133: “函数”: 从“LTNode *”到“stu *”的类型不兼容
+C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(222,23): warning C4028: 形参 1 与声明不同
+C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(238,8): warning C4473: “scanf”: 没有为格式字符串传递足够的参数
+C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(238,8): message : 占位符和其参数预计 1 可变参数，但提供的却是 0 参数
+C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(238,8): message : 缺失的可变参数 1 为格式字符串“%c”所需
+C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(309,3): warning C4033: “search”必须返回值
+C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(322,3): warning C4033: “search”必须返回值
+C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(340,8): warning C4133: “=”: 从“LTNode *”到“stu *”的类型不兼容
+C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(353,8): warning C4133: “=”: 从“LTNode *”到“stu *”的类型不兼容
+C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(364,2): warning C4133: “return”: 从“stu *”到“LTNode *”的类型不兼容
+C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(152): warning C4715: “scanstu”: 不是所有的控件路径都返回值
+C:\Users\nafla\Desktop\college\college\code\大一上\学生信息系统\student.c(365): warning C4715: “search”: 不是所有的控件路径都返回值
   学生信息系统.vcxproj -> C:\Users\nafla\Desktop\college\college\code\大一上\x64\Debug\学生信息系统.exe
