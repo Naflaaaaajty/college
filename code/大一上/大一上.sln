@@ -219,6 +219,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "学生管理系统", "学�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "代码段测试", "代码段测试\代码段测试.vcxproj", "{BC38B42E-65AE-4F2D-A83D-A46894F9F18A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "堆调试", "堆调试\堆调试.vcxproj", "{34884C8D-20BE-475C-BC00-F3475BE139D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1091,6 +1093,14 @@ Global
 		{BC38B42E-65AE-4F2D-A83D-A46894F9F18A}.Release|x64.Build.0 = Release|x64
 		{BC38B42E-65AE-4F2D-A83D-A46894F9F18A}.Release|x86.ActiveCfg = Release|Win32
 		{BC38B42E-65AE-4F2D-A83D-A46894F9F18A}.Release|x86.Build.0 = Release|Win32
+		{34884C8D-20BE-475C-BC00-F3475BE139D6}.Debug|x64.ActiveCfg = Debug|x64
+		{34884C8D-20BE-475C-BC00-F3475BE139D6}.Debug|x64.Build.0 = Debug|x64
+		{34884C8D-20BE-475C-BC00-F3475BE139D6}.Debug|x86.ActiveCfg = Debug|Win32
+		{34884C8D-20BE-475C-BC00-F3475BE139D6}.Debug|x86.Build.0 = Debug|Win32
+		{34884C8D-20BE-475C-BC00-F3475BE139D6}.Release|x64.ActiveCfg = Release|x64
+		{34884C8D-20BE-475C-BC00-F3475BE139D6}.Release|x64.Build.0 = Release|x64
+		{34884C8D-20BE-475C-BC00-F3475BE139D6}.Release|x86.ActiveCfg = Release|Win32
+		{34884C8D-20BE-475C-BC00-F3475BE139D6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

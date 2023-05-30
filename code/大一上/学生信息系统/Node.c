@@ -1,15 +1,12 @@
 #include "student.h"
-
-//双向带头循环链表的初始化
 LTNode* ListInit()
 {
-	LTNode* phead = (LTNode*)malloc(sizeof(LTNode));//创建头结点
-	phead->next = phead;//后继指针指向头
-	phead->prev = phead;//前驱指针指向头
+	LTNode* phead = (LTNode*)malloc(sizeof(LTNode));
+	phead->next = phead;
+	phead->prev = phead;
+	phead->size = 0;
 	return phead;
 }
-
-//双向带头循环链表的打印
 void ListPrint(LTNode* phead)
 {
 	assert(phead);
@@ -21,8 +18,6 @@ void ListPrint(LTNode* phead)
 	}
 	printf("\n");
 }
-
-//增容函数
 LTNode* BuyListNode(stu* x)
 {
 	LTNode* newnode = (LTNode*)malloc(sizeof(LTNode));
@@ -34,10 +29,9 @@ LTNode* BuyListNode(stu* x)
 	newnode->Data = x;
 	newnode->next = NULL;
 	newnode->prev = NULL;
+	newnode->size = 0;
 	return newnode;
 }
-
-//双向带头循环链表的尾插
 void ListPushBack(LTNode* phead,stu* x)
 {
 	assert(phead);
@@ -48,8 +42,6 @@ void ListPushBack(LTNode* phead,stu* x)
 	newnode->next = phead;
 	phead->prev = newnode;
 }
-
-//双向带头循环链表的尾删
 void ListPopBack(LTNode* phead)
 {
 	assert(phead);
@@ -59,10 +51,8 @@ void ListPopBack(LTNode* phead)
 	free(tail);
 	tailprev->next = phead;
 	phead->prev = tailprev;
-	//ListErase(phead->prev);//尾删就相当于复用Erase这个函数
+	//ListErase(phead->prev);
 }
-
-//双向带头循环链表的头插
 void ListPushFront(LTNode* phead, LTDataType x)
 {
 	assert(phead);
@@ -72,10 +62,7 @@ void ListPushFront(LTNode* phead, LTDataType x)
 	newnode->prev = phead;
 	newnode->next = next;
 	next->prev = newnode;
-	//ListInsert(phead->next, x);
 }
-
-//双向带头循环链表的头删
 void ListPopFront(LTNode* phead)
 {
 	assert(phead);
@@ -85,8 +72,6 @@ void ListPopFront(LTNode* phead)
 	phead->next = next->next;
 	nextNext->prev = phead;
 }
-
-//双向带头循环链表的查找
 LTNode* ListFind(LTNode* phead, LTDataType x)
 {
 	assert(phead);
@@ -101,8 +86,6 @@ LTNode* ListFind(LTNode* phead, LTDataType x)
 	}
 	return NULL;
 }
-
-//双向带头循环链表pos位置之前插入
 void ListInsert(LTNode* pos, LTDataType x)
 {
 	assert(pos);
@@ -113,8 +96,6 @@ void ListInsert(LTNode* pos, LTDataType x)
 	newnode->next = pos;
 	pos->prev = newnode;
 }
-
-//双向带头循环链表pos位置删除
 void ListErase(LTNode* pos)
 {
 	if (!pos)
@@ -139,8 +120,6 @@ void ListErase(LTNode* pos)
 	free(pos);
 	pos = NULL;
 }
-
-//双向带头循环链表的销毁
 void ListDestroy(LTNode* phead)
 {
 	assert(phead);

@@ -1,3 +1,4 @@
+
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 #include<stdlib.h>
@@ -24,7 +25,7 @@ typedef struct pass__ {
 	char pass[pass_max];
 	bool flag;
 }passw;
-void menu();
+void menu(void);
 void password(void);
 typedef int LTDataType;
 typedef struct ListNode
@@ -66,5 +67,4 @@ void sortclass(LTNode* class);
 void delstu(LTNode* class);
 void average(LTNode* class);
 void my_sort(LTNode* head);
-
 void destroyall(LTNode* class);

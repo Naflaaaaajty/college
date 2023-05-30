@@ -52,10 +52,6 @@ void password(void)
 }
 void creatclass(LTNode* class)
 {
-	if (pass->a < 0)
-		pass->a = 0;
-	else
-		class->size = pass->a;
 	if (!pass->a)
 	{
 	  printf("请输入你要创建几个班级\n");
@@ -69,9 +65,7 @@ void creatclass(LTNode* class)
 	  while (cur != class)
 	  {	  
 		  initclass(cur);
-		  cur = cur->next;
-	  
-		  
+		  cur = cur->next; 
 	  }
 	}
 	else
@@ -132,6 +126,7 @@ stu* scanstu()
 	if (!date)
 	{
 		perror("scanstu failled");
+		assert(date);
 		return;
 	}
 	puts("--------------------------------------------------------------------");

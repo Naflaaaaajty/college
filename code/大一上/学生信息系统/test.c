@@ -18,7 +18,7 @@ int main()
 	int input = 0;
 	pass = (passw*)malloc(sizeof(passw));
 	loadpass();
-	/*password();*/
+	password();
 	LTNode* class=ListInit();
 	if (pass->a)
 	{
