@@ -1,4 +1,4 @@
 ﻿  源.c
-C:\Users\nafla\Desktop\college\college\code\大一上\无序数组查找元素\源.c(38,2): warning C4013: “system”未定义；假设外部返回 int
-C:\Users\nafla\Desktop\college\college\code\大一上\无序数组查找元素\源.c(26,6): warning C4101: “i”: 未引用的局部变量
+C:\Users\nafla\Desktop\college\college\code\大一上\无序数组查找元素\源.c(14,2): warning C4013: “system”未定义；假设外部返回 int
+C:\Users\nafla\Desktop\college\college\code\大一上\无序数组查找元素\源.c(8,6): warning C4101: “i”: 未引用的局部变量
   无序数组查找元素.vcxproj -> C:\Users\nafla\Desktop\college\college\code\大一上\x64\Debug\无序数组查找元素.exe

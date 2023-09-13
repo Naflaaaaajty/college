@@ -79,14 +79,12 @@ int main()
 			destroyall(class);
 			break;
 		case EXIT:
-			
 			break;
 		default:
 			printf("ÊäÈë´íÎó");
 			break;
 		}
 	} while (input);
-	system("pause");
 	savestu(class);
 	return 0;
 }

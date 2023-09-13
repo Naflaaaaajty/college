@@ -1,0 +1,5 @@
+﻿  Date.cpp
+  test.cpp
+  正在生成代码...
+C:\Users\nafla\Desktop\college\college\code\大一下（cpp）\时间管理器\test.cpp(57): warning C4715: “Date::operator<=”: 不是所有的控件路径都返回值
+  时间管理器.vcxproj -> C:\Users\nafla\Desktop\college\college\code\大一下（cpp）\x64\Debug\时间管理器.exe
