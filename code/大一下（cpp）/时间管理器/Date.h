@@ -6,6 +6,7 @@ using namespace std;
 class Date
 {
 public:
+	//explicit 
 	Date(int year = 1, int month = 1, int day = 1);
 	void Print()
 	{
